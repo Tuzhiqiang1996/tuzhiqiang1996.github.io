@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>用户注册</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../static/components/bootstrap/css/bootstrap.min.css" tppabs="http://www.jpress.yinpengfei.com/static/components/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/components/font-awesome/css/font-awesome.min.css" tppabs="http://www.jpress.yinpengfei.com/static/components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/components/ionicons/css/ionicons.min.css" tppabs="http://www.jpress.yinpengfei.com/static/components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../static/adminlte/css/AdminLTE.min.css" tppabs="http://www.jpress.yinpengfei.com/static/adminlte/css/AdminLTE.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="../static/html5shiv/html5shiv.min.js" tppabs="http://www.jpress.yinpengfei.com/static/html5shiv/html5shiv.min.js"></script>
+    <script src="../static/respond/respond.min.js" tppabs="http://www.jpress.yinpengfei.com/static/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .login-page {
+            background-image: url("../static/commons/img/bg.png")/*tpa=http://www.jpress.yinpengfei.com/static/commons/img/bg.png*/;
+            background-size: cover;
+        }
+
+        .form-group {
+            text-align: left;
+        }
+
+        .login-box {
+            width: 360px;
+            margin: 5% auto;
+            padding: 0;
+        }
+    </style>
+
+    <script>
+
+        function doGetSmsCode() {
+            var phone = $('#phone').val();
+            var captcha = $('#captcha').val();
+
+            if (phone == '') {
+                alert('手机号不能为空....');
+                return;
+            }
+            if (captcha == '') {
+                alert('验证码不能为空....');
+                return;
+            }
+
+
+            $.get("/commons/getsmscode?phone=" + phone + "&captcha=" + captcha, function (result) {
+                $('#captcha').val('');
+                $('#captchaimg').attr("src", '/commons/captcha?d=' + Math.random())
+                alert(result.message);
+            });
+        }
+
+    </script>
+</head>
+<body class="hold-transition login-page">
+
+<div class="row">
+    <div class="login-box text-center">
+        <div class="login-box-body">
+            <!-- <form action="http://www.jpress.yinpengfei.com/user/doRegister" method="post" class="autoAjaxSubmit" data-ok-function="ok"> -->
+            <form action="login.htm" method="post" class="autoAjaxSubmit" data-ok-function="ok">
+                <div class="form-group">
+                    <label>账号</label>
+                    <input type="text" class="form-control" placeholder="请输入账号" name="username">
+                </div>
+                <div class="form-group">
+                    <label>邮箱</label>
+                    <input type="text" class="form-control" placeholder="请输入邮箱" name="email">
+                </div>
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password" class="form-control" placeholder="密码..." name="pwd">
+                </div>
+                <div class="form-group">
+                    <label>确认密码</label>
+                    <input type="password" class="form-control" placeholder="及确认密码" name="confirmPwd">
+                </div>
+                <div class="form-group">
+                    <label>验证码</label>
+                    <input type="text" class="form-control" placeholder="请输入验证码" name="captcha" id="captcha">
+                    <img src="../commons/captcha.jpg" tppabs="http://www.jpress.yinpengfei.com/commons/captcha" onclick="this.src='/commons/captcha?d='+Math.random();" cdn-exclude id="captchaimg">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12" style="padding-top: 15px">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">注 册</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<script src="../static/components/jquery/jquery.min.js" tppabs="http://www.jpress.yinpengfei.com/static/components/jquery/jquery.min.js"></script>
+<script src="../static/components/jquery/jquery.form.min.js" tppabs="http://www.jpress.yinpengfei.com/static/components/jquery/jquery.form.min.js"></script>
+<script src="../static/components/bootstrap/js/bootstrap.min.js" tppabs="http://www.jpress.yinpengfei.com/static/components/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/commons/jpresscommons.js"  ></script>
+<script>
+    function ok(){
+        alert("注册成功，点击确定进行登录。")
+        location.href = "login.htm"/*tpa=http://www.jpress.yinpengfei.com/user/login*/;
+       
+    }
+</script>
+
+
+</body></html>

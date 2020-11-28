@@ -1,0 +1,1 @@
+(function hitokoto(){var hitokoto="我希望兜兜转转之后那个人还是你.";var dom=document.querySelector('#hitokoto');Array.isArray(dom)?dom[0].innerText=hitokoto:dom.innerText=hitokoto;})()
