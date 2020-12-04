@@ -1,272 +1,79 @@
-<!-- <!DOCTYPE html>
-<html lang="zh_CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>加班 熬夜 不秃顶</title>
-  </head>
-  <body>
-    <h1
-      style="
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        color: brown;
-      "
-    >
-      有个傻子，名叫江鹏
-    </h1>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>加班 熬夜 不秃顶</title>
-    <style>
-      .bg {
-        width: 100%;
-        height: 100%;
-        background: url(./img/bg.png) no-repeat;
-        background-size: 100% 100%;
-        background-attachment: fixed;
-        position: absolute;
-        display: flex;
-        justify-content: space-evenly;
-        flex-flow: column;
-        flex-wrap: wrap;
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js"></script>
+    <script>
+      function init() {
+        let glowInTexts = document.querySelectorAll(".glowIn");
+        glowInTexts.forEach((glowInText) => {
+          let letters = glowInText.textContent.split("");
+          glowInText.textContent = "";
+          letters.forEach((letter, i) => {
+            let span = document.createElement("span");
+            span.textContent = letter;
+            span.style.animationDelay = `${i * 0.05}s`;
+            glowInText.append(span);
+          });
+        });
+        console.log("123");
       }
-      .bga {
-        width: 350px;
-        height: 80px;
-        line-height: 80px;
-        text-align: center;
-        background: url(./img//btbg.png) no-repeat center;
-        background-size: 100% 100%;
-        margin: 20px;
-      }
-      a {
-        text-decoration: none;
-        color: antiquewhite;
-      }
-      .text {
-        background-image: -webkit-linear-gradient(
-          left,
-          blue,
-          #66ffff 10%,
-          #cc00ff 20%,
-          #cc00cc 30%,
-          #ccccff 40%,
-          #00ffff 50%,
-          #ccccff 60%,
-          #cc00cc 70%,
-          #cc00ff 80%,
-          #66ffff 90%,
-          blue 100%
-        );
-        -webkit-text-fill-color: transparent; /* 将字体设置成透明色 */
-        -webkit-background-clip: text; /* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
-        -webkit-background-size: 200% 100%;
-        -webkit-animation: masked-animation 4s linear infinite;
-        font-size: 35px;
-      }
-      @keyframes masked-animation {
-        0% {
-          background-position: 0 0;
-        }
-        100% {
-          background-position: -100% 0;
-        }
-      }
-      .datetime {
-        height: 100px;
-        color: #00ffff;
-      }
-    </style>
-    <script type="text/javascript">
-      var t = null;
-
-      function time() {
-        dt = new Date();
-        var y = dt.getFullYear();
-        var M = dt.getMonth() + 1;
-        var d = dt.getDate();
-        var h = dt.getHours();
-        var m = dt.getMinutes();
-        var s = dt.getSeconds();
-        M = checkTime(M);
-        d = checkTime(d);
-        h = checkTime(h);
-        m = checkTime(m);
-        s = checkTime(s);
-        document.getElementById("timeShow").innerHTML =
-          "当前时间：" + y + "-" + M + "-" + d + " " + h + ":" + m + ":" + s;
-        t = setTimeout(time, 1000);
-      }
-
-      window.onload = function () {
-        time();
-      };
-
-      function checkTime(i) {
-        if (i < 10) {
-          i = "0" + i;
-        }
-        return i;
-      }
+      setTimeout(() => {
+        init();
+      }, 10);
     </script>
   </head>
   <body>
-    <div class="bg">
-      <div>
-        <div class="bga">
-          <a href="./big-screen/智慧交通/大数据视频监控/index.html"
-            >智慧交通/大数据视频监控</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧交通/旅游大数据/index.html"
-            >智慧交通/旅游大数据</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧交通//高速交通大数据分析平台/index.html"
-            >智慧交通/高速交通大数据分析平台</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧城市/大数据可视化展板通用模板/index.html"
-            >智慧城市/大数据可视化展板</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧城市/智慧工地/index.html"
-            >智慧城市/智慧工地</a
-          >
-        </div>
-        <div class="bga">
-          <a
-            href="./big-screen/智慧电商/电子商务公共服务平台大数据中心/index.html"
-            >智慧电商/电子商务公共服务平台大数据中心</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧电商/运营大数据/index.html"
-            >智慧电商/运营大数据</a
-          >
-        </div>
-      </div>
-      <div>
-        <div class="bga">
-          <a href="./big-screen/智慧电商/销售大数据页面模板/index.html"
-            >智慧电商/销售大数据页面</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧金融/银行企业信用风险实时监测/index.html"
-            >智慧金融/银行企业信用风险实时监测</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧气象/气象预报大数据平台/index.html"
-            >智慧气象/气象预报大数据平台</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧物联/新能源车联网综合大数据平台/index.html"
-            >智慧物联/新能源车联网综合大数据平台</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧物联/物联网平台数据统计/index.html"
-            >智慧物联/物联网平台数据统计</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧物流/智慧物流/index.html"
-            >智慧物流/智慧物流</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧物流/物流大数据服务平台/index.html"
-            >智慧物流/物流大数据服务平台</a
-          >
+    <h1 class="glowIn">Hello World</h1>
+    <p class="glowIn">
+      In the prosperous city, here is your warm harbor. Putting down your day’s work and brewing a cup of tea, you can drive away your day’s fatigue here.
+    </p>
+
+    <dialog id="confirm-modal" class="modal">
+      <div class="modal-content">
+        <svg
+          t="1574164208713"
+          class="model-icon"
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="5819"
+          width="63"
+          height="63"
+        >
+          <path
+            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0zM512 877.714286c-40.228571 0-73.142857-32.914286-73.142857-73.142857s32.914286-73.142857 73.142857-73.142857 73.142857 32.914286 73.142857 73.142857S552.228571 877.714286 512 877.714286zM585.142857 512c0 40.228571-32.914286 73.142857-73.142857 73.142857s-73.142857-32.914286-73.142857-73.142857L438.857143 219.428571c0-40.228571 32.914286-73.142857 73.142857-73.142857s73.142857 32.914286 73.142857 73.142857L585.142857 512z"
+            p-id="5820"
+            fill="white"
+          ></path>
+        </svg>
+        <h2 class="modal-title">Are you sure?</h2>
+        <p class="modal-description">Whether to enter the website?</p>
+        <div class="modal-options">
+          <button
+            class="btn btn-round btn-fill btn-fill-left option confirm"
+            data-text="Yes"
+            onclick="document.querySelector('#confirm-modal').close(),window.location='./blogs/index.htm'"
+          ></button>
+          <button
+            class="btn btn-round btn-fill btn-fill-right option cancel"
+            data-text="No"
+            onclick="document.querySelector('#confirm-modal').close()"
+          ></button>
         </div>
       </div>
-      <div>
-        <div class="bga">
-          <a href="./big-screen/智慧医疗/大数据医疗/views/index.html"
-            >智慧医疗/大数据医疗</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧运维/可视化监控管理/index.html"
-            >智慧运维/可视化监控管理</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧运维/大数据统计展示大屏/index.html"
-            >智慧运维/大数据统计展示大屏</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧运维/设备环境监测平台/index.html"
-            >智慧运维/设备环境监测平台</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧运营/厅店效能大屏监控看板/page/index.html"
-            >智慧运营/厅店效能大屏监控看板</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧政务/土地交易大数据可视化平台/index.html"
-            >智慧政务/土地交易大数据可视化平台</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧政务/工商办税大数据监控平台/index.html"
-            >智慧政务/工商办税大数据监控平台</a
-          >
-        </div>
-      </div>
-      <div>
-        <div class="bga">
-          <a href="./big-screen/智慧政务/智慧社区/index.html"
-            >智慧政务/智慧社区</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧政务/综合分析平台/pages/index.html"
-            >智慧政务/综合分析平台</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./big-screen/智慧政务/舆情分析/activity.html"
-            >智慧政务/舆情分析</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./html5-3d-butterflies/index.html"
-            >3D动画</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./html5-css3-3d-rubik-cube/index.html"
-            >3D魔方</a
-          >
-        </div>
-        <div class="bga">
-          <a href="./blogs/index.htm"
-            >blogs</a
-          >
-        </div>
-      </div>
-      <div><h1 class="text">大数据展示平台</h1></div>
-      <div id="timeShow" class="datetime"></div>
-    </div>
+    </dialog>
+    <form action="javascript:void(0);">
+      <!-- <button class="btn btn-danger">Delete history</button> -->
+      <button
+        class="btn btn-primary btn-ghost btn-shine"
+        onclick="document.querySelector('#confirm-modal').showModal()"
+      >
+        hover me
+      </button>
+    </form>
   </body>
 </html>

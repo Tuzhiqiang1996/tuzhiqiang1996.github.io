@@ -1,5 +1,5 @@
 layui.config({
-    base: './templates/perfree-simple-pro/static/plugins/laynotice/' 
+    base: './templates/perfree-simple-pro/static/plugins/laynotice/'
 });
 var lay_notice;
 layui.use(['notice'], function(){
@@ -88,8 +88,9 @@ class skPlayer {
             this.bind();
         }else if(this.type === 'cloud'){
             Util.ajax({
-                // url: baseUrl + 'perfree/music/getMusicList',
-                url: 'http://www.jpress.yinpengfei.com/perfree/music/getMusicList',
+                url: baseUrl + 'perfree/music/getMusicList',
+                // url: 'http://www.jpress.yinpengfei.com/perfree/music/getMusicList',
+                // url:"../templates/perfree-simple-pro/static/plugins/skplayer/getMusicList",
                 beforeSend: () => {
                 },
                 success: (data) => {

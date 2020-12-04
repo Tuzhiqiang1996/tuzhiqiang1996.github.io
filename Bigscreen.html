@@ -1,0 +1,267 @@
+<!-- <!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>加班 熬夜 不秃顶</title>
+  </head>
+  <body>
+    <h1
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: brown;
+      "
+    >
+      有个傻子，名叫江鹏
+    </h1>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>加班 熬夜 不秃顶</title>
+    <style>
+      .bg {
+        width: 100%;
+        height: 100%;
+        background: url(./img/bg.png) no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column;
+        flex-wrap: wrap;
+      }
+      .bga {
+        width: 350px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        background: url(./img//btbg.png) no-repeat center;
+        background-size: 100% 100%;
+        margin: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: antiquewhite;
+      }
+      .text {
+        background-image: -webkit-linear-gradient(
+          left,
+          blue,
+          #66ffff 10%,
+          #cc00ff 20%,
+          #cc00cc 30%,
+          #ccccff 40%,
+          #00ffff 50%,
+          #ccccff 60%,
+          #cc00cc 70%,
+          #cc00ff 80%,
+          #66ffff 90%,
+          blue 100%
+        );
+        -webkit-text-fill-color: transparent; /* 将字体设置成透明色 */
+        -webkit-background-clip: text; /* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+        -webkit-background-size: 200% 100%;
+        -webkit-animation: masked-animation 4s linear infinite;
+        font-size: 35px;
+      }
+      @keyframes masked-animation {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -100% 0;
+        }
+      }
+      .datetime {
+        height: 100px;
+        color: #00ffff;
+      }
+    </style>
+    <script type="text/javascript">
+      var t = null;
+
+      function time() {
+        dt = new Date();
+        var y = dt.getFullYear();
+        var M = dt.getMonth() + 1;
+        var d = dt.getDate();
+        var h = dt.getHours();
+        var m = dt.getMinutes();
+        var s = dt.getSeconds();
+        M = checkTime(M);
+        d = checkTime(d);
+        h = checkTime(h);
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("timeShow").innerHTML =
+          "当前时间：" + y + "-" + M + "-" + d + " " + h + ":" + m + ":" + s;
+        t = setTimeout(time, 1000);
+      }
+
+      window.onload = function () {
+        time();
+      };
+
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bg">
+      <div>
+        <div class="bga">
+          <a href="./big-screen/智慧交通/大数据视频监控/index.html"
+            >智慧交通/大数据视频监控</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧交通/旅游大数据/index.html"
+            >智慧交通/旅游大数据</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧交通//高速交通大数据分析平台/index.html"
+            >智慧交通/高速交通大数据分析平台</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧城市/大数据可视化展板通用模板/index.html"
+            >智慧城市/大数据可视化展板</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧城市/智慧工地/index.html"
+            >智慧城市/智慧工地</a
+          >
+        </div>
+        <div class="bga">
+          <a
+            href="./big-screen/智慧电商/电子商务公共服务平台大数据中心/index.html"
+            >智慧电商/电子商务公共服务平台大数据中心</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧电商/运营大数据/index.html"
+            >智慧电商/运营大数据</a
+          >
+        </div>
+      </div>
+      <div>
+        <div class="bga">
+          <a href="./big-screen/智慧电商/销售大数据页面模板/index.html"
+            >智慧电商/销售大数据页面</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧金融/银行企业信用风险实时监测/index.html"
+            >智慧金融/银行企业信用风险实时监测</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧气象/气象预报大数据平台/index.html"
+            >智慧气象/气象预报大数据平台</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧物联/新能源车联网综合大数据平台/index.html"
+            >智慧物联/新能源车联网综合大数据平台</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧物联/物联网平台数据统计/index.html"
+            >智慧物联/物联网平台数据统计</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧物流/智慧物流/index.html"
+            >智慧物流/智慧物流</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧物流/物流大数据服务平台/index.html"
+            >智慧物流/物流大数据服务平台</a
+          >
+        </div>
+      </div>
+      <div>
+        <div class="bga">
+          <a href="./big-screen/智慧医疗/大数据医疗/views/index.html"
+            >智慧医疗/大数据医疗</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧运维/可视化监控管理/index.html"
+            >智慧运维/可视化监控管理</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧运维/大数据统计展示大屏/index.html"
+            >智慧运维/大数据统计展示大屏</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧运维/设备环境监测平台/index.html"
+            >智慧运维/设备环境监测平台</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧运营/厅店效能大屏监控看板/page/index.html"
+            >智慧运营/厅店效能大屏监控看板</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧政务/土地交易大数据可视化平台/index.html"
+            >智慧政务/土地交易大数据可视化平台</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧政务/工商办税大数据监控平台/index.html"
+            >智慧政务/工商办税大数据监控平台</a
+          >
+        </div>
+      </div>
+      <div>
+        <div class="bga">
+          <a href="./big-screen/智慧政务/智慧社区/index.html"
+            >智慧政务/智慧社区</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧政务/综合分析平台/pages/index.html"
+            >智慧政务/综合分析平台</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./big-screen/智慧政务/舆情分析/activity.html"
+            >智慧政务/舆情分析</a
+          >
+        </div>
+        <!-- <div class="bga">
+          <a href="./html5-3d-butterflies/index.html"
+            >3D动画</a
+          >
+        </div>
+        <div class="bga">
+          <a href="./html5-css3-3d-rubik-cube/index.html"
+            >3D魔方</a
+          >
+        </div> -->
+      </div>
+      <div><h1 class="text">大数据展示平台</h1></div>
+      <div id="timeShow" class="datetime"></div>
+    </div>
+  </body>
+</html>
