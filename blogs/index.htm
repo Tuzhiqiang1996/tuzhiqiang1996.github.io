@@ -59,6 +59,7 @@
       }
       .cat,
       .play,
+      .drawing,
       .photo,
       .time,
       .friend {
@@ -67,6 +68,7 @@
       .home{
         /* display: table-cell; */
       }
+
     </style>
   </head>
   <body>
@@ -266,6 +268,16 @@
                   onclick="play()"
                   ><i class="fa fa-bed fa-fw"></i>
                   <span class="p-left-menu-nav-txt">有趣</span></a
+                >
+              </li>
+              <li class="layui-nav-item" lay-unselect>
+                <!-- href="link.htm" -->
+                <a
+                  class="nav-menu-a p-nav-menu-btn pjax"
+                  target="_self"
+                  onclick="drawing()"
+                  ><i class="fa fa-file-video-o fa-fw"></i>
+                  <span class="p-left-menu-nav-txt">画画</span></a
                 >
               </li>
             </ul>
@@ -1020,6 +1032,51 @@
 
             </div>
           </div>
+          <!-- huahua -->
+          <div class="p-content-box drawing">
+            <div class="p-content-box-lwlhitokoto">
+              <h3>3D</h3>
+            </div>
+            <div class="p-link-list-box layui-clear">
+              <a
+                class="p-link-box layui-clear"
+                href="../html5-3d-butterflies/index.html"
+                target="_blank"
+              >
+                <div class="p-link-img">
+                  <img
+                    src="../www.baidu.com/favicon.ico"
+                    tppabs="https://www.baidu.com/favicon.ico"
+                  />
+                </div>
+                <div class="p-link-msg">
+                  <h2 class="p-link-title">3D蝴蝶</h2>
+                  <span>不玩不知道</span>
+                </div>
+              </a>
+              <a
+                class="p-link-box layui-clear"
+                href="../html5-webgl-galaxy/index.html"
+                target="_blank"
+              >
+                <div class="p-link-img">
+                  <img
+                    src="../static.zhihu.com/static/favicon.ico"
+                    tppabs="https://static.zhihu.com/static/favicon.ico"
+                  />
+                </div>
+                <div class="p-link-msg">
+                  <h2 class="p-link-title">星海</h2>
+                  <span>不玩不知道</span>
+                </div>
+              </a>
+            </div>
+            <div class="p-article-content-box link-msg">
+
+              <blockquote>
+
+            </div>
+          </div>
           <div class="p-right-side-box">
             <!-- 热门start -->
             <div class="p-right-card-box">
@@ -1430,46 +1487,105 @@
       $(".photo").css("display", "none");
       $(".time").css("display", "none");
       $(".friend").css("display", "none");
+
+      var $win  =$(window);
+if($win.width() > 1024) {
+    // 加载baicss1
+} else {
+    // 加载css2
+}
+ 小平 block
+ 大屏 table-cell
       */
 
+        var $win  =$(window);
       function home(params) {
+
         // $(".home").css("display", "block");
         $(".cat").hide()
         $(".photo").hide()
         $(".time").hide()
         $(".friend").hide()
+        $(".play").hide()
+        $(".drawing").hide()
       }
       function cat(params) {
-        $(".home").hide()
+        if($win.width() >900) {
         $(".cat").css("display", "table-cell");
+        } else {
+        $(".cat").css("display", "block");
+        }
+        $(".home").hide()
         $(".photo").hide()
         $(".time").hide()
         $(".friend").hide()
+        $(".drawing").hide()
+        $(".play").hide()
       }
       function photo(params) {
-        $(".home").hide()
+        if($win.width() >900) {
         $(".photo").css("display", "table-cell");
+        } else {
+        $(".photo").css("display", "block");
+        }
+        $(".home").hide()
         $(".cat").hide()
         $(".time").hide()
         $(".friend").hide()
+        $(".drawing").hide()
+        $(".play").hide()
       }
       function time(params) {
-        $(".home").hide()
+        if($win.width() >900) {
         $(".time").css("display", "table-cell");
+        } else {
+        $(".time").css("display", "block");
+        }
+        $(".home").hide()
+        // $(".time").css("display", "block");
         $(".cat").hide()
         $(".photo").hide()
         $(".friend").hide()
+        $(".drawing").hide()
+        $(".play").hide()
       }
       function friend(params) {
-        $(".home").hide()
+        if($win.width() >900) {
         $(".friend").css("display", "table-cell");
+        } else {
+        $(".friend").css("display", "block");
+        }
+        $(".home").hide()
+        // $(".friend").css("display", "block");
         $(".cat").hide()
         $(".photo").hide()
         $(".time").hide()
+        $(".drawing").hide()
+        $(".play").hide()
       }
       function play(params) {
-        $(".home").hide()
+        if($win.width() >900) {
         $(".play").css("display", "table-cell");
+        } else {
+        $(".play").css("display", "block");
+        }
+        $(".home").hide()
+        // $(".play").css("display", "block");
+        $(".cat").hide()
+        $(".photo").hide()
+        $(".time").hide()
+        $(".friend").hide()
+        $(".drawing").hide()
+      }
+      function drawing(params) {
+        if($win.width() >900) {
+        $(".drawing").css("display", "table-cell");
+        } else {
+        $(".drawing").css("display", "block");
+        }
+        $(".home").hide()
+        // $(".drawing").css("display", "block");
+        $(".play").hide()
         $(".cat").hide()
         $(".photo").hide()
         $(".time").hide()
