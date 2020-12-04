@@ -58,6 +58,7 @@
         background-size: 100% 100%;
       }
       .cat,
+      .play,
       .photo,
       .time,
       .friend {
@@ -262,7 +263,7 @@
                 <a
                   class="nav-menu-a p-nav-menu-btn pjax"
                   target="_self"
-                  onclick="friend()"
+                  onclick="play()"
                   ><i class="fa fa-bed fa-fw"></i>
                   <span class="p-left-menu-nav-txt">有趣</span></a
                 >
@@ -974,6 +975,51 @@
               </blockquote>
             </div>
           </div>
+          <!-- 酷玩 -->
+          <div class="p-content-box play">
+            <div class="p-content-box-lwlhitokoto">
+              <h3>酷玩</h3>
+            </div>
+            <div class="p-link-list-box layui-clear">
+              <a
+                class="p-link-box layui-clear"
+                href="../html5-css3-3d-rubik-cube/index.html"
+                target="_blank"
+              >
+                <div class="p-link-img">
+                  <img
+                    src="../www.baidu.com/favicon.ico"
+                    tppabs="https://www.baidu.com/favicon.ico"
+                  />
+                </div>
+                <div class="p-link-msg">
+                  <h2 class="p-link-title">3D魔方</h2>
+                  <span>不玩不知道</span>
+                </div>
+              </a>
+              <a
+                class="p-link-box layui-clear"
+                href="../chess/index.html"
+                target="_blank"
+              >
+                <div class="p-link-img">
+                  <img
+                    src="../static.zhihu.com/static/favicon.ico"
+                    tppabs="https://static.zhihu.com/static/favicon.ico"
+                  />
+                </div>
+                <div class="p-link-msg">
+                  <h2 class="p-link-title">象棋</h2>
+                  <span>不玩不知道</span>
+                </div>
+              </a>
+            </div>
+            <div class="p-article-content-box link-msg">
+
+              <blockquote>
+
+            </div>
+          </div>
           <div class="p-right-side-box">
             <!-- 热门start -->
             <div class="p-right-card-box">
@@ -1388,38 +1434,46 @@
 
       function home(params) {
         // $(".home").css("display", "block");
-        $(".cat").css("display", "none  ");
-        $(".photo").css("display", "none  ");
-        $(".time").css("display", "none  ");
-        $(".friend").css("display", "none  ");
+        $(".cat").hide()
+        $(".photo").hide()
+        $(".time").hide()
+        $(".friend").hide()
       }
       function cat(params) {
-        $(".home").css("display", "none  ");
+        $(".home").hide()
         $(".cat").css("display", "table-cell");
-        $(".photo").css("display", "none  ");
-        $(".time").css("display", "none  ");
-        $(".friend").css("display", "none  ");
+        $(".photo").hide()
+        $(".time").hide()
+        $(".friend").hide()
       }
       function photo(params) {
-        $(".home").css("display", "none  ");
+        $(".home").hide()
         $(".photo").css("display", "table-cell");
-        $(".cat").css("display", "none  ");
-        $(".time").css("display", "none  ");
-        $(".friend").css("display", "none  ");
+        $(".cat").hide()
+        $(".time").hide()
+        $(".friend").hide()
       }
       function time(params) {
-        $(".home").css("display", "none  ");
+        $(".home").hide()
         $(".time").css("display", "table-cell");
-        $(".cat").css("display", "none  ");
-        $(".photo").css("display", "none  ");
-        $(".friend").css("display", "none  ");
+        $(".cat").hide()
+        $(".photo").hide()
+        $(".friend").hide()
       }
       function friend(params) {
-        $(".home").css("display", "none  ");
+        $(".home").hide()
         $(".friend").css("display", "table-cell");
-        $(".cat").css("display", "none  ");
-        $(".photo").css("display", "none  ");
-        $(".time").css("display", "none  ");
+        $(".cat").hide()
+        $(".photo").hide()
+        $(".time").hide()
+      }
+      function play(params) {
+        $(".home").hide()
+        $(".play").css("display", "table-cell");
+        $(".cat").hide()
+        $(".photo").hide()
+        $(".time").hide()
+        $(".friend").hide()
       }
     </script>
   </body>
