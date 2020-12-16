@@ -11,6 +11,7 @@
     />
     <meta name="author" content="" />
     <title>小小提米苏</title>
+    <link rel="dns-prefetch" href="http://abc.tuzhiqiang.top/blogs/img">
     <link
       rel="icon"
       type="image/ico"
@@ -1469,16 +1470,18 @@
         //bizhi
         var i = 1;
         setInterval(() => {
-          i = Math.round(Math.random() * 36 + 1);
-          $("body").css("background", `url(./img/${i}.jpg) no-repeat`);
-        }, 1000 * 5);
-      })(window, document); /***/
+          i = Math.round(Math.random() * 48 + 1);
+          setTimeout(() => {
+            $("body").css("background", `url(./img/${i}.jpg) no-repeat`);
+          }, 1000*5);
+        }, 1000 * 10);
+      })(window, document);
 
       /**自定义盒子宽度
        */
       $(".p-box").css("width", "68%");
 
-      /***/
+
 
       /*
 
