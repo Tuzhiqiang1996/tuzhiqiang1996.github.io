@@ -1375,6 +1375,37 @@
       tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/js/main.js"
     ></script>
     <script>
+
+      //构建Promise异步对象，通过多种方式实现图片预加载
+      function loadImage(src){
+            var p = new Promise(function(resolve,reject){
+                var img = new Image();
+                img.onload=function(){
+                    resolve(img);
+                }
+                img.onerror=function(){
+                    reject(src);
+                }
+                img.src=src;
+            });
+            return p;
+        }
+
+        // 第一种方式,通过Promise.all()实现
+        var arr = [];
+        //图片命名从3-到79-，所以循环从3开始到80结束
+        for(var i=1; i<53; i++){
+            var p = loadImage("./img/"+i+".jpg");
+            arr.push(p);
+        }
+        // console.log(arr)
+        Promise.all(arr).then(function(list){
+            list.forEach(item=>{
+                // console.log(item.width,item.src);
+            })
+        })
+    </script>
+    <script>
       /**自定义js代码
        */
       (function (window, document, undefined) {
@@ -1470,10 +1501,10 @@
         //bizhi
         var i = 1;
         setInterval(() => {
-          i = Math.round(Math.random() * 48 + 1);
-          setTimeout(() => {
+          i = Math.round(Math.random() * 51 + 1);
+
             $("body").css("background", `url(./img/${i}.jpg) no-repeat`);
-          }, 1000*5);
+
         }, 1000 * 10);
       })(window, document);
 
