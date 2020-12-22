@@ -6,6 +6,26 @@
     <title>加班 熬夜 不秃顶</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="prefetch" type="image/ico" href="./img/bg2.jpg" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background: linear-gradient(
+            rgba(16, 16, 16, 0.8),
+            rgba(16, 16, 16, 0.8)
+          ),
+          url("./img/bg2.jpg") no-repeat;
+
+        background-size: cover;
+        background-position: center 0;
+        /* min-width: 1200px; */
+        width: 100%;
+      }
+    </style>
     <script src="./js/index.js"></script>
     <script>
       function init() {
@@ -77,5 +97,35 @@
         hover me
       </button>
     </form>
+    <script>
+      //构建Promise异步对象，通过多种方式实现图片预加载
+      function loadImage(src) {
+        var p = new Promise(function (resolve, reject) {
+          var img = new Image();
+          img.onload = function () {
+            resolve(img);
+          };
+          img.onerror = function () {
+            reject(src);
+          };
+          img.src = src;
+        });
+        return p;
+      }
+
+      // 第一种方式,通过Promise.all()实现
+      var arr = [];
+      //图片命名从3-到79-，所以循环从3开始到80结束
+
+      var p = loadImage("./img/bg2.jpg");
+      arr.push(p);
+
+      console.log(arr);
+      Promise.all(arr).then(function (list) {
+        list.forEach((item) => {
+          console.log(item.width, item.src);
+        });
+      });
+    </script>
   </body>
 </html>
