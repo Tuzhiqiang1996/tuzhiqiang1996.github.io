@@ -1,160 +1,433 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ZH-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="keywords" content="">
-<meta name="description" content="孤独，真的成为了人的生活常态，不知道为什么最近总能想到这个话题，不知道你能不能明白生命叫孤独，不知道你有没有和你谈的来的人。也许正因为孤独，你才迷恋各种游戏、电影、综艺、甚至发了疯的写代码不敢停下来，">
-<meta name="template" content="Perfree-Simple-Pro">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<meta name="author" content="">
-<title>谁又不曾孤独呢-孤独患者</title>
-<link rel="icon" type="image/ico" href="../attachment/20200827/3f0f43cd68144245bdf91e7d42590991.gif" tppabs="http://www.jpress.yinpengfei.com/attachment/20200827/3f0f43cd68144245bdf91e7d42590991.gif">
-<link rel="stylesheet" href="../templates/perfree-simple-pro/static/plugins/layui/css/layui.css" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/layui/css/layui.css" media="all">
-<link rel="stylesheet" href="../templates/perfree-simple-pro/static/css/perfree.min.css" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/css/perfree.min.css" media="all">
-<link rel="stylesheet" href="../templates/perfree-simple-pro/static/plugins/font-awesome/css/font-awesome.min.css" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/font-awesome/css/font-awesome.min.css" media="all">
-<link rel="stylesheet" href="../templates/perfree-simple-pro/static/plugins/skplayer/skPlayer.min.css" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/skplayer/skPlayer.min.css" media="all">
-    <link rel="stylesheet" href="../templates/perfree-simple-pro/static/plugins/highlight/styles/vs.css" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/highlight/styles/vs.css" media="all">
-<script type="text/javascript" src="../templates/perfree-simple-pro/static/plugins/jquery/jquery-1.8.3.min.js" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/jquery/jquery-1.8.3.min.js"></script>
-</head>
-<body><div style="display: none;" id="hitokoto"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Perfree-Simple-Pro" />
+    <meta
+      name="description"
+      content="一款高仿Typecho的handsome博客主题 主题简介 抛弃一切繁琐,只想简简单单的呈现你的文采,如你所见,这是一款简约清新的博客主题模板,该模板收费69元,包含相册插件和留言板插件(开发中)以及"
+    />
+    <meta name="template" content="Perfree-Simple-Pro" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="author" content="" />
+    <title>PerfreeSimple-安安静静的写博客</title>
+    <link
+      rel="icon"
+      type="image/ico"
+      href="../attachment/20200827/3f0f43cd68144245bdf91e7d42590991.gif"
+      tppabs="http://www.jpress.yinpengfei.com/attachment/20200827/3f0f43cd68144245bdf91e7d42590991.gif"
+    />
+    <link
+      rel="stylesheet"
+      href="../templates/perfree-simple-pro/static/plugins/layui/css/layui.css"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/layui/css/layui.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="../templates/perfree-simple-pro/static/css/perfree.min.css"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/css/perfree.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="../templates/perfree-simple-pro/static/plugins/font-awesome/css/font-awesome.min.css"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/font-awesome/css/font-awesome.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="../templates/perfree-simple-pro/static/plugins/skplayer/skPlayer.min.css"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/skplayer/skPlayer.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="../templates/perfree-simple-pro/static/plugins/highlight/styles/vs.css"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/highlight/styles/vs.css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="../templates/perfree-simple-pro/static/plugins/jquery/jquery-1.8.3.min.js"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/jquery/jquery-1.8.3.min.js"
+    ></script>
+    <style>
+      body {
+        background: url("../../blogs/img/13.jpg" ) no-repeat;
+      }
+      .cat,
+      .play,
+      .drawing,
+      .photo,
+      .time,
+      .friend {
+        display: none;
+      }
+      .home{
+        /* display: table-cell; */
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div style="display: none" id="hitokoto"></div>
 
     <script>
-    /**自定义背景颜色
-    */
+      /**自定义背景颜色
+       */
 
-    /**自定义背景图片
-    */
-</script>
+      /**自定义背景图片
+       */
+    </script>
 
     <div class="p-box">
-        <div class="p-left-box">
-    <div class="p-left-box-2">
-        <div class="p-left-logo-box">
-            <a class="p-left-logo-box-text pjax" href="../index.htm" tppabs="http://www.jpress.yinpengfei.com/">
-                    <span class="p-left-logo-box-text-name">小小提米苏</span>
+      <div class="p-left-box">
+        <div class="p-left-box-2">
+          <div class="p-left-logo-box">
+            <a
+              class="p-left-logo-box-text pjax"
+              href="../index.htm"
+              tppabs="http://www.jpress.yinpengfei.com/"
+            >
+              <span class="p-left-logo-box-text-name">小小提米苏</span>
             </a>
-        </div>
-        <div class="p-left-user-box">
-            <a class="p-left-user-img-box pjax" href="../index.htm" tppabs="http://www.jpress.yinpengfei.com/">
-                    <img src="../attachment/20200827/3f0f43cd68144245bdf91e7d42590991.gif" tppabs="http://www.jpress.yinpengfei.com/attachment/20200827/3f0f43cd68144245bdf91e7d42590991.gif">
+          </div>
+          <div class="p-left-user-box">
+            <a
+              class="p-left-user-img-box pjax"
+              href="../index.htm"
+              tppabs="http://www.jpress.yinpengfei.com/"
+            >
+              <img
+                src="../attachment/20200827/3f0f43cd68144245bdf91e7d42590991.gif"
+                tppabs="http://www.jpress.yinpengfei.com/attachment/20200827/3f0f43cd68144245bdf91e7d42590991.gif"
+              />
             </a>
-            <a class="p-left-user-name-box pjax" href="../index.htm" tppabs="http://www.jpress.yinpengfei.com/">
-                <span>小小提米苏</span>
+            <a
+              class="p-left-user-name-box pjax"
+              href="../index.htm"
+              tppabs="http://www.jpress.yinpengfei.com/"
+            >
+              <span>小小提米苏</span>
             </a>
             <div class="p-left-user-hitokoto-box">
-                <span class="text-muted text-xs block">
-                    <div id="chakhsu"></div>
-                    <script>
-                        var chakhsu = function (r) {
-                            function t() {
-                                return b[Math.floor(Math.random() * b.length)]
-                            }
-                            function e() {
-                                return String.fromCharCode(94 * Math.random() + 33)
-                            }
-                            function n(r) {
-                                for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
-                                    var l = document.createElement("span"); l.textContent = e(), l.style.color = t(), n.appendChild(l)
-                                }
-                                return n
-                            }
-                            function i() {
-                                var t = o[c.skillI]; c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
-                            }
-                            var l = "♥", o = ["简简单单的生活,安安静静的写博客" ].map(function (r) {
-                                return r + ""
-                            }), a = 2, g = 1, s = 5, d = 75, b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"], c = {text: "", prefixP: -s, skillI: 0, skillP: 0, direction: "forward", delay: a, step: g}; i() };
-                        chakhsu(document.getElementById('chakhsu'));
-                    </script>
-                </span>
+              <span class="text-muted text-xs block">
+                <div id="chakhsu"></div>
+                <script>
+                  var chakhsu = function (r) {
+                    function t() {
+                      return b[Math.floor(Math.random() * b.length)];
+                    }
+                    function e() {
+                      return String.fromCharCode(94 * Math.random() + 33);
+                    }
+                    function n(r) {
+                      for (
+                        var n = document.createDocumentFragment(), i = 0;
+                        r > i;
+                        i++
+                      ) {
+                        var l = document.createElement("span");
+                        (l.textContent = e()),
+                          (l.style.color = t()),
+                          n.appendChild(l);
+                      }
+                      return n;
+                    }
+                    function i() {
+                      var t = o[c.skillI];
+                      c.step
+                        ? c.step--
+                        : ((c.step = g),
+                          c.prefixP < l.length
+                            ? (c.prefixP >= 0 && (c.text += l[c.prefixP]),
+                              c.prefixP++)
+                            : "forward" === c.direction
+                            ? c.skillP < t.length
+                              ? ((c.text += t[c.skillP]), c.skillP++)
+                              : c.delay
+                              ? c.delay--
+                              : ((c.direction = "backward"), (c.delay = a))
+                            : c.skillP > 0
+                            ? ((c.text = c.text.slice(0, -1)), c.skillP--)
+                            : ((c.skillI = (c.skillI + 1) % o.length),
+                              (c.direction = "forward"))),
+                        (r.textContent = c.text),
+                        r.appendChild(
+                          n(
+                            c.prefixP < l.length
+                              ? Math.min(s, s + c.prefixP)
+                              : Math.min(s, t.length - c.skillP)
+                          )
+                        ),
+                        setTimeout(i, d);
+                    }
+                    var l = "♥",
+                      o = ["简简单单的生活"].map(function (r) {
+                        return r + "";
+                      }),
+                      a = 2,
+                      g = 1,
+                      s = 5,
+                      d = 75,
+                      b = [
+                        "rgb(110,64,170)",
+                        "rgb(150,61,179)",
+                        "rgb(191,60,175)",
+                        "rgb(228,65,157)",
+                        "rgb(254,75,131)",
+                        "rgb(255,94,99)",
+                        "rgb(255,120,71)",
+                        "rgb(251,150,51)",
+                        "rgb(226,183,47)",
+                        "rgb(198,214,60)",
+                        "rgb(175,240,91)",
+                        "rgb(127,246,88)",
+                        "rgb(82,246,103)",
+                        "rgb(48,239,130)",
+                        "rgb(29,223,163)",
+                        "rgb(26,199,194)",
+                        "rgb(35,171,216)",
+                        "rgb(54,140,225)",
+                        "rgb(76,110,219)",
+                        "rgb(96,84,200)",
+                      ],
+                      c = {
+                        text: "",
+                        prefixP: -s,
+                        skillI: 0,
+                        skillP: 0,
+                        direction: "forward",
+                        delay: a,
+                        step: g,
+                      };
+                    i();
+                  };
+                  chakhsu(document.getElementById("chakhsu"));
+                </script>
+              </span>
             </div>
-        </div>
-        <hr class="layui-bg-black">
-        <!--左侧菜单-->
-        <div class="p-left-menu-box">
+          </div>
+          <hr class="layui-bg-black" />
+          <!--左侧菜单-->
+          <div class="p-left-menu-box">
             <ul class="layui-nav layui-nav-tree" lay-filter="left-side">
-                    <li class="layui-nav-item " lay-unselect>
-                        <a href="../index.htm" tppabs="http://www.jpress.yinpengfei.com/" class=" nav-menu-a  p-nav-menu-btn  pjax" target="_self"><i class="fa fa-home fa-fw"></i> <span class="p-left-menu-nav-txt">首页</span></a>
-                    </li>
-                    <li class="layui-nav-item " lay-unselect>
-                        <a href="../category.htm" tppabs="http://www.jpress.yinpengfei.com/category" class=" nav-menu-a  p-nav-menu-btn  pjax" target="_self"><i class="fa fa-bars fa-fw"></i> <span class="p-left-menu-nav-txt">分类</span></a>
-                    </li>
-                    <li class="layui-nav-item " lay-unselect>
-                        <a href="../photoList.htm" tppabs="http://www.jpress.yinpengfei.com/photoList" class=" nav-menu-a  p-nav-menu-btn  pjax" target="_self"><i class="fa fa-image fa-fw"></i> <span class="p-left-menu-nav-txt">相册</span></a>
-                    </li>
-                    <li class="layui-nav-item " lay-unselect>
-                        <a href="../time.htm" tppabs="http://www.jpress.yinpengfei.com/time" class=" nav-menu-a  p-nav-menu-btn  pjax" target="_self"><i class="fa fa-clock-o fa-fw"></i> <span class="p-left-menu-nav-txt">归档</span></a>
-                    </li>
-                    <li class="layui-nav-item " lay-unselect>
-                        <a href="../link.htm" tppabs="http://www.jpress.yinpengfei.com/link" class=" nav-menu-a  p-nav-menu-btn  pjax" target="_self"><i class="fa fa-user-o fa-fw"></i> <span class="p-left-menu-nav-txt">朋友</span></a>
-                    </li>
+              <li class="layui-nav-item" lay-unselect>
+                <!-- href="../index.htm"
+                tppabs="http://www.jpress.yinpengfei.com/" -->
+                <a
+                  class="nav-menu-a p-nav-menu-btn pjax"
+                  target="_self"
+                  onclick="home()"
+                  ><i class="fa fa-home fa-fw"></i>
+                  <span class="p-left-menu-nav-txt">首页</span></a
+                >
+              </li>
+              <li class="layui-nav-item" lay-unselect>
+                <!-- href="../category.htm"
+                tppabs="http://www.jpress.yinpengfei.com/category" -->
+                <a
+                  class="nav-menu-a p-nav-menu-btn pjax"
+                  target="_self"
+                  onclick="cat()"
+                  ><i class="fa fa-bars fa-fw"></i>
+                  <span class="p-left-menu-nav-txt">分类</span></a
+                >
+              </li>
+              <li class="layui-nav-item" lay-unselect>
+                <!-- href="../photoList.htm"
+                tppabs="http://www.jpress.yinpengfei.com/photoList" -->
+                <a
+                  class="nav-menu-a p-nav-menu-btn pjax"
+                  target="_self"
+                  onclick="photo()"
+                  ><i class="fa fa-image fa-fw"></i>
+                  <span class="p-left-menu-nav-txt">相册</span></a
+                >
+              </li>
+              <li class="layui-nav-item" lay-unselect>
+                <!-- href="../time.htm"
+                tppabs="http://www.jpress.yinpengfei.com/time" -->
+                <a
+                  class="nav-menu-a p-nav-menu-btn pjax"
+                  target="_self"
+                  onclick="time()"
+                  ><i class="fa fa-clock-o fa-fw"></i>
+                  <span class="p-left-menu-nav-txt">归档</span></a
+                >
+              </li>
+              <li class="layui-nav-item" lay-unselect>
+                <!-- href="../link.htm"
+                tppabs="http://www.jpress.yinpengfei.com/link" -->
+                <a
+                  class="nav-menu-a p-nav-menu-btn pjax"
+                  target="_self"
+                  onclick="friend()"
+                  ><i class="fa fa-user-o fa-fw"></i>
+                  <span class="p-left-menu-nav-txt">朋友</span></a
+                >
+              </li>
+              <li class="layui-nav-item" lay-unselect>
+                <a
+                href="../../Bigscreen.html"
+                  class="nav-menu-a p-nav-menu-btn pjax"
+                  target="_self"
+                  ><i class="fa fa-archive fa-fw"></i>
+                  <span class="p-left-menu-nav-txt">数据大屏</span></a
+                >
+              </li>
+              <li class="layui-nav-item" lay-unselect>
+                <!-- href="link.htm" -->
+                <a
+                  class="nav-menu-a p-nav-menu-btn pjax"
+                  target="_self"
+                  onclick="play()"
+                  ><i class="fa fa-bed fa-fw"></i>
+                  <span class="p-left-menu-nav-txt">有趣</span></a
+                >
+              </li>
+              <li class="layui-nav-item" lay-unselect>
+                <!-- href="link.htm" -->
+                <a
+                  class="nav-menu-a p-nav-menu-btn pjax"
+                  target="_self"
+                  onclick="drawing()"
+                  ><i class="fa fa-file-video-o fa-fw"></i>
+                  <span class="p-left-menu-nav-txt">画画</span></a
+                >
+              </li>
             </ul>
-        </div>
-        <hr class="layui-bg-black">
-            <!-- 左侧导航底部社交按钮start -->
-            <div class="p-left-bottom-box">
-                <div class="p-l-b-content layui-clear">
-                    <a class="p-l-b-btn" href="javascript:if(confirm(%27http://weibo.com/gbcxf  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://weibo.com/gbcxf%27" tppabs="http://weibo.com/gbcxf" target="_blank" title="微博">
-                        <span class="p-l-b-btn-icon"><i class="fa fa-weibo" aria-hidden="true"></i></span>
-                        <span class="p-l-b-btn-name">微博</span>
-                    </a>
-                    <a class="p-l-b-btn" href="javascript:if(confirm(%27https://github.com/perfree  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/perfree%27" tppabs="https://github.com/perfree" target="_blank" title="GitHub">
-                        <span class="p-l-b-btn-icon"><i class="fa fa-github" aria-hidden="true"></i></span>
-                        <span class="p-l-b-btn-name">GitHub</span>
-                    </a>
-                    <a class="p-l-b-btn" href="../attachment/20200827/b0e9f059ad3c45b8910ee220915239fa.jpg" tppabs="http://www.jpress.yinpengfei.com/attachment/20200827/b0e9f059ad3c45b8910ee220915239fa.jpg" target="_blank" title="微信">
-                        <span class="p-l-b-btn-icon"><i class="fa fa-weixin" aria-hidden="true"></i></span>
-                        <span class="p-l-b-btn-name">微信</span>
-                    </a>
-                </div>
+          </div>
+          <hr class="layui-bg-black" />
+          <!-- 左侧导航底部社交按钮start -->
+          <div class="p-left-bottom-box">
+            <div class="p-l-b-content layui-clear">
+              <a
+                class="p-l-b-btn"
+                href="javascript:if(confirm(%27https://weibo.com/5821608297/profile  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://weibo.com/5821608297/profile%27"
+                tppabs="https://weibo.com/5821608297/profile"
+                target="_blank"
+                title="微博"
+              >
+                <span class="p-l-b-btn-icon"
+                  ><i class="fa fa-weibo" aria-hidden="true"></i
+                ></span>
+                <span class="p-l-b-btn-name">微博</span>
+              </a>
+              <a
+                class="p-l-b-btn"
+                href="javascript:if(confirm(%27https://github.com/Tuzhiqiang1996 \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/Tuzhiqiang1996%27"
+                tppabs="https://github.com/Tuzhiqiang1996"
+                target="_blank"
+                title="GitHub"
+              >
+                <span class="p-l-b-btn-icon"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></span>
+                <span class="p-l-b-btn-name">GitHub</span>
+              </a>
+              <a
+                class="p-l-b-btn"
+                href="../attachment/20200827/b0e9f059ad3c45b8910ee220915239fa.jpg"
+                tppabs="http://www.jpress.yinpengfei.com/attachment/20200827/b0e9f059ad3c45b8910ee220915239fa.jpg"
+                target="_blank"
+                title="微信"
+              >
+                <span class="p-l-b-btn-icon"
+                  ><i class="fa fa-weixin" aria-hidden="true"></i
+                ></span>
+                <span class="p-l-b-btn-name">微信</span>
+              </a>
             </div>
-            <!-- 左侧导航底部社交按钮end -->
-    </div>
-</div>
-        <div class="p-right-box">
-            <div class="p-header-box box-shadow">
-    <div class="p-header-box-menu-btn">
-        <a id="phoneOnOffMenu" style="display: none">
-            <i class="layui-icon"></i>
-        </a>
-    </div>
-    <div class="p-header-box-search-box">
-        <form action="http://www.jpress.yinpengfei.com/article/search">
-            <input type="text" placeholder="请输入搜索内容" name="keyword" required>
-            <button type="submit"><i class="layui-icon"></i> </button>
-        </form>
-    </div>
-    <a class="phone-title pjax" href="../index.htm" tppabs="http://www.jpress.yinpengfei.com/">
+          </div>
+          <!-- 左侧导航底部社交按钮end -->
+        </div>
+      </div>
+      <div class="p-right-box">
+        <div class="p-header-box box-shadow">
+          <div class="p-header-box-menu-btn">
+            <a id="phoneOnOffMenu" style="display: none">
+              <i class="layui-icon"></i>
+            </a>
+          </div>
+          <div class="p-header-box-search-box">
+            <form action="http://www.jpress.yinpengfei.com/article/search">
+              <input
+                type="text"
+                placeholder="请输入搜索内容"
+                name="keyword"
+                required
+              />
+              <button type="submit"><i class="layui-icon"></i></button>
+            </form>
+          </div>
+          <a
+            class="phone-title pjax"
+            href="../index.htm"
+            tppabs="http://www.jpress.yinpengfei.com/"
+          >
             <span class="p-left-logo-box-text-name">小小提米苏</span>
-    </a>
-    <div class="p-header-box-right-box">
-        <div class="p-header-box-music-box">
-            <div id="skPlayer"></div>
+          </a>
+          <div class="p-header-box-right-box">
+            <div class="p-header-box-music-box">
+              <div id="skPlayer"></div>
+            </div>
+            <div class="p-header-box-login-box">
+              <a
+                class="p-header-box-login-box-login"
+                href="../user/login.htm"
+                tppabs="http://www.jpress.yinpengfei.com/user/login"
+                >登录</a
+              >
+              <span style="float: left; line-height: 50px">|</span>
+              <a
+                class="p-header-box-login-box-register"
+                href="../user/register.htm"
+                tppabs="http://www.jpress.yinpengfei.com/user/register"
+                >注册</a
+              >
+            </div>
+            <a id="phoneSetting" style="display: none">
+              <i class="layui-icon"></i>
+            </a>
+          </div>
+          <div class="p-phone-top-nav box-shadow">
+            <form action="http://www.jpress.yinpengfei.com/article/search">
+              <input
+                type="text"
+                placeholder="请输入搜索内容"
+                name="keyword"
+                required
+              />
+              <button type="submit"><i class="layui-icon"></i></button>
+            </form>
+            <div class="p-phone-top-nav-login-box">
+              <div class="no-login layui-clear">
+                <a
+                  class="login-btn"
+                  href="../user/login.htm"
+                  tppabs="http://www.jpress.yinpengfei.com/user/login"
+                  >登录</a
+                >
+                <a
+                  class="register-btn"
+                  href="../user/register.htm"
+                  tppabs="http://www.jpress.yinpengfei.com/user/register"
+                  >注册</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="p-header-box-login-box">
-                <a class="p-header-box-login-box-login" href="../user/login.htm" tppabs="http://www.jpress.yinpengfei.com/user/login">登录</a>
-                    <span style="float: left;line-height: 50px;">|</span>
-                <a class="p-header-box-login-box-register" href="../user/register.htm" tppabs="http://www.jpress.yinpengfei.com/user/register">注册</a>
-        </div>
-        <a id="phoneSetting" style="display: none">
-            <i class="layui-icon"></i>
-        </a>
-    </div>
-    <div class="p-phone-top-nav box-shadow">
-        <form action="http://www.jpress.yinpengfei.com/article/search">
-            <input type="text" placeholder="请输入搜索内容" name="keyword" required>
-            <button type="submit"><i class="layui-icon"></i> </button>
-        </form>
-        <div class="p-phone-top-nav-login-box">
-                <div class="no-login layui-clear">
-                    <a class="login-btn" href="../user/login.htm" tppabs="http://www.jpress.yinpengfei.com/user/login">登录</a>
-                    <a class="register-btn" href="../user/register.htm" tppabs="http://www.jpress.yinpengfei.com/user/register">注册</a>
-                </div>
-        </div>
-    </div>
-</div>
-            <div class="p-container-box">
-<div class="p-content-box">
+        <div class="p-container-box">
+
+<div class="p-content-box home">
     <div class="p-content-box-lwlhitokoto">
         <h2>谁又不曾孤独呢-孤独患者</h2>
         <span><i class="fa fa-user-o" aria-hidden="true"></i> perfree</span>
@@ -234,217 +507,893 @@
         }
     </script>
 </div>
-                <div class="p-right-side-box">
-    <!-- 热门start -->
-        <div class="p-right-card-box">
-            <h2 class="p-right-card-title">热门文章</h2>
-            <div class="p-right-card-body">
-                <ul>
-                        <li class="p-hot-article-box">
-                            <a href="9.htm" tppabs="http://www.jpress.yinpengfei.com/article/9" class="pjax">
-                                <img src="../templates/perfree-simple-pro/static/images/1.png" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/images/1.png" alt="" class="p-hot-article-img">
-                                <div class="p-hot-article-right-box">
-                                    <h2>Perfree-Simple-Pro-致更好的你</h2>
-                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 5600</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="p-hot-article-box">
-                            <a href="1.htm" tppabs="http://www.jpress.yinpengfei.com/article/1" class="pjax">
-                                <img src="../templates/perfree-simple-pro/static/images/2.png" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/images/2.png" alt="" class="p-hot-article-img">
-                                <div class="p-hot-article-right-box">
-                                    <h2>PerfreeSimple-安安静静的写博客</h2>
-                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 1777</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="p-hot-article-box">
-                            <a href="4.htm" tppabs="http://www.jpress.yinpengfei.com/article/4" class="pjax">
-                                <img src="../templates/perfree-simple-pro/static/images/3.png" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/images/3.png" alt="" class="p-hot-article-img">
-                                <div class="p-hot-article-right-box">
-                                    <h2>推荐一个很棒的html网页背景图片网站</h2>
-                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 1296</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="p-hot-article-box">
-                            <a href="1359.htm" tppabs="http://www.jpress.yinpengfei.com/article/1359" class="pjax">
-                                <img src="../templates/perfree-simple-pro/static/images/4.png" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/images/4.png" alt="" class="p-hot-article-img">
-                                <div class="p-hot-article-right-box">
-                                    <h2>Python数学计算/解方程/求导</h2>
-                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 987</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="p-hot-article-box">
-                            <a href="7.htm" tppabs="http://www.jpress.yinpengfei.com/article/7" class="pjax">
-                                <img src="../templates/perfree-simple-pro/static/images/5.png" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/images/5.png" alt="" class="p-hot-article-img">
-                                <div class="p-hot-article-right-box">
-                                    <h2>谁又不曾孤独呢-孤独患者</h2>
-                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 873</span>
-                                </div>
-                            </a>
-                        </li>
-                </ul>
+
+             <!-- 分类 -->
+             <div class="p-content-box cat">
+              <div class="p-content-box-lwlhitokoto">
+                <h3>分类</h3>
+              </div>
+              <div class="p-category-list-box layui-clear">
+                <a
+                  class="p-category-box layui-clear pjax"
+                  title="共2篇文章"
+                  href="article/category/jpress.htm"
+                  tppabs="http://www.jpress.yinpengfei.com/article/category/jpress"
+                >
+                  <div class="p-category-img"></div>
+                  <div class="p-category-msg">
+                    <h2 class="p-category-title">jpress</h2>
+                    <span>别看了,只是一个测试分类</span>
+                  </div>
+                  <div class="p-category-count">2</div>
+                </a>
+              </div>
+              <script>
+                function pageInit() {
+                  // 截取分类首字母
+                  $(".p-category-title").each(function () {
+                    var title = $(this).text();
+                    $(this)
+                      .parent()
+                      .siblings(".p-category-img")
+                      .text(title.substring(0, 1));
+                    $(this)
+                      .parent()
+                      .siblings(".p-category-img")
+                      .css({ "background-color": common.getRandomColor() });
+                  });
+                }
+              </script>
             </div>
-        </div>
-    <!-- 热门end -->
-    <div class="p-right-card-box">
-        <h2 class="p-right-card-title">博客信息</h2>
-        <div class="p-right-card-body p-right-blog-msg-box">
-            <ul class="layui-clear">
-                <li class="layui-clear">
-                    <span class="msg-box-left"><i class="fa fa-book" aria-hidden="true"></i> 文章数目</span>
+            <!-- 相册 -->
+            <div class="p-content-box photo">
+              <div class="p-content-box-lwlhitokoto">
+                <h1>相册</h1>
+              </div>
+              <div class="p-photoList-box layui-clear">
+                <a
+                  class="p-photo-box p-shadow pjax"
+                  href="photo/2.htm"
+                  tppabs="http://www.jpress.yinpengfei.com/photo/2"
+                >
+                  <div class="p-photoList-img-box">
+                    <img
+                      src="attachment/20200827/f91b47dab4e047329ac629d72c27c20b.jpg"
+                      tppabs="http://www.jpress.yinpengfei.com/attachment/20200827/f91b47dab4e047329ac629d72c27c20b.jpg"
+                      alt=""
+                      class="p-photoList-thumb"
+                    />
+                  </div>
+                  <div class="p-photoList-title-box">
+                    <span class="p-photoList-desc"
+                      ><i class="layui-icon" style="font-size: 15px"></i>
+                      演示加密相册</span
+                    >
+                  </div>
+                  <span class="p-hover-bg p-enc-bg"
+                    ><i class="layui-icon" style="font-size: 20px"></i>
+                    相册已加密</span
+                  >
+                </a>
+                <a
+                  class="p-photo-box p-shadow pjax"
+                  href="photo/1.htm"
+                  tppabs="http://www.jpress.yinpengfei.com/photo/1"
+                >
+                  <div class="p-photoList-img-box">
+                    <img
+                      src="attachment/20200827/5950cb7043384fd8af5c630ae4562e6d.jpg"
+                      tppabs="http://www.jpress.yinpengfei.com/attachment/20200827/5950cb7043384fd8af5c630ae4562e6d.jpg"
+                      alt=""
+                      class="p-photoList-thumb"
+                    />
+                  </div>
+                  <div class="p-photoList-title-box">
+                    <span class="p-photoList-desc">演示相册</span>
+                  </div>
+                  <span class="p-hover-bg"
+                    ><i class="layui-icon" style="font-size: 30px"></i></span
+                  >
+                </a>
+              </div>
+              <script>
+                function pageInit() {
+                  $(".p-photoList-box").on(
+                    "mouseenter",
+                    ".p-photo-box",
+                    function () {
+                      $(this).children(".p-hover-bg").show();
+                    }
+                  );
+                  $(".p-photoList-box").on(
+                    "mouseleave",
+                    ".p-photo-box",
+                    function () {
+                      $(this).children(".p-hover-bg").hide();
+                    }
+                  );
+                }
+              </script>
+            </div>
+            <!-- 归档 -->
+            <div class="p-content-box time">
+              <div class="p-content-box-lwlhitokoto">
+                <h3>文章归档</h3>
+                <span>目前共发布了8篇文章,继续努力~</span>
+              </div>
+              <div class="p-article-timeline-box">
+                <ul class="layui-timeline" id="timelineBox"></ul>
+              </div>
+              <div id="timeLinePage" style="text-align: center"></div>
+              <script>
+                function pageInit() {
+                  $.getScript(
+                    "templates/perfree-simple-pro/static/js/time.js" /*tpa=http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/js/time.js*/,
+                    function () {
+                      let articles = [
+                        //
+                        //
+                        {
+                          title: "Python数学计算/解方程/求导",
+                          url: "/article/1359",
+                          created: "2019年08月13日",
+                        },
+                        //
+                        {
+                          title: "推荐一款分布式文件服务器",
+                          url: "/article/10",
+                          created: "2019年06月06日",
+                        },
+                        //
+                        {
+                          title: "Perfree-Simple-Pro-致更好的你",
+                          url: "/article/9",
+                          created: "2019年06月03日",
+                        },
+                        //
+                        {
+                          title: "谁又不曾孤独呢-孤独患者",
+                          url: "/article/7",
+                          created: "2019年05月08日",
+                        },
+                        //
+                        {
+                          title: "推荐一个很棒的html网页背景图片网站",
+                          url: "/article/4",
+                          created: "2019年04月24日",
+                        },
+                        //
+                        {
+                          title: "Python脚本文件-基本语法",
+                          url: "/article/3",
+                          created: "2019年04月24日",
+                        },
+                        //
+                        {
+                          title: "Python数据分析之Pandas数据可视化",
+                          url: "/article/2",
+                          created: "2019年04月23日",
+                        },
+                        //
+                        {
+                          title: "PerfreeSimple-安安静静的写博客",
+                          url: "/article/1",
+                          created: "2019年04月20日",
+                        },
+                        //
+                        //
+                      ];
+                      pageForInit(articles);
+                    }
+                  );
+                }
+              </script>
+            </div>
+            <!-- 朋友 -->
+            <div class="p-content-box friend">
+              <div class="p-content-box-lwlhitokoto">
+                <h3>朋友</h3>
+              </div>
+              <div class="p-link-list-box layui-clear">
+                <a
+                  class="p-link-box layui-clear"
+                  href="javascript:if(confirm(%27http://www.baidu.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.baidu.com/%27"
+                  tppabs="http://www.baidu.com/"
+                  target="_blank"
+                >
+                  <div class="p-link-img">
+                    <img
+                      src="../www.baidu.com/favicon.ico"
+                      tppabs="https://www.baidu.com/favicon.ico"
+                    />
+                  </div>
+                  <div class="p-link-msg">
+                    <h2 class="p-link-title">演示友链</h2>
+                    <span>百度一下,就不知道</span>
+                  </div>
+                </a>
+                <a
+                  class="p-link-box layui-clear"
+                  href="javascript:if(confirm(%27https://www.zhihu.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://www.zhihu.com/%27"
+                  tppabs="https://www.zhihu.com/"
+                  target="_blank"
+                >
+                  <div class="p-link-img">
+                    <img
+                      src="../static.zhihu.com/static/favicon.ico"
+                      tppabs="https://static.zhihu.com/static/favicon.ico"
+                    />
+                  </div>
+                  <div class="p-link-msg">
+                    <h2 class="p-link-title">演示友链2</h2>
+                    <span>知乎知乎</span>
+                  </div>
+                </a>
+              </div>
+              <div class="p-article-content-box link-msg">
+                <p><strong>申请友链须知</strong></p>
+                <blockquote>
+                  <ol>
+                    <li>
+                      优先于技术、生活分享类博客站点友链，坚决不和论坛、导航、含有暴力等不健康信息内容站点做任何交换。
+                    </li>
+                    <li>
+                      站点时间不超过3个月且文章数量不超过20篇，暂不与进行链接交换，请谅解
+                    </li>
+                    <li>目前只提供内页链接的申请</li>
+                    <li>申请链接前请先添加本博链接</li>
+                    <li>申请请提供：站点名称、链接和一句话描述和一张Logo图片</li>
+                    <li>联系QQ: 160****414,添加时请备注来源博客</li>
+                  </ol>
+                </blockquote>
+              </div>
+            </div>
+            <!-- 酷玩 -->
+            <div class="p-content-box play">
+              <div class="p-content-box-lwlhitokoto">
+                <h3>酷玩</h3>
+              </div>
+              <div class="p-link-list-box layui-clear">
+                <a
+                  class="p-link-box layui-clear"
+                  href="../../../html5-css3-3d-rubik-cube/index.html"
+                  target="_blank"
+                >
+                  <div class="p-link-img">
+                    <img
+                      src="../www.baidu.com/favicon.ico"
+                      tppabs="https://www.baidu.com/favicon.ico"
+                    />
+                  </div>
+                  <div class="p-link-msg">
+                    <h2 class="p-link-title">3D魔方</h2>
+                    <span>不玩不知道</span>
+                  </div>
+                </a>
+                <a
+                  class="p-link-box layui-clear"
+                  href="../chess/index.html"
+                  target="_blank"
+                >
+                  <div class="p-link-img">
+                    <img
+                      src="../static.zhihu.com/static/favicon.ico"
+                      tppabs="https://static.zhihu.com/static/favicon.ico"
+                    />
+                  </div>
+                  <div class="p-link-msg">
+                    <h2 class="p-link-title">象棋</h2>
+                    <span>不玩不知道</span>
+                  </div>
+                </a>
+              </div>
+              <div class="p-article-content-box link-msg">
+
+                <blockquote>
+
+              </div>
+            </div>
+            <!-- huahua -->
+            <div class="p-content-box drawing">
+              <div class="p-content-box-lwlhitokoto">
+                <h3>3D</h3>
+              </div>
+              <div class="p-link-list-box layui-clear">
+                <a
+                  class="p-link-box layui-clear"
+                  href="@/html5-3d-butterflies/index.html"
+                  target="_blank"
+                >
+                  <div class="p-link-img">
+                    <img
+                      src="../www.baidu.com/favicon.ico"
+                      tppabs="https://www.baidu.com/favicon.ico"
+                    />
+                  </div>
+                  <div class="p-link-msg">
+                    <h2 class="p-link-title">3D蝴蝶</h2>
+                    <span>不玩不知道</span>
+                  </div>
+                </a>
+                <a
+                  class="p-link-box layui-clear"
+                  href="../html5-webgl-galaxy/index.html"
+                  target="_blank"
+                >
+                  <div class="p-link-img">
+                    <img
+                      src="../static.zhihu.com/static/favicon.ico"
+                      tppabs="https://static.zhihu.com/static/favicon.ico"
+                    />
+                  </div>
+                  <div class="p-link-msg">
+                    <h2 class="p-link-title">星海</h2>
+                    <span>不玩不知道</span>
+                  </div>
+                </a>
+              </div>
+              <div class="p-article-content-box link-msg">
+
+                <blockquote>
+
+              </div>
+            </div>
+          <div class="p-right-side-box">
+            <!-- 热门start -->
+            <div class="p-right-card-box">
+              <h2 class="p-right-card-title">热门文章</h2>
+              <div class="p-right-card-body">
+                <ul>
+                  <li class="p-hot-article-box">
+                    <a
+                      href="9.htm"
+                      tppabs="http://www.jpress.yinpengfei.com/article/9"
+                      class="pjax"
+                    >
+                      <img
+                        src="../templates/perfree-simple-pro/static/images/1.png"
+                        tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/images/1.png"
+                        alt=""
+                        class="p-hot-article-img"
+                      />
+                      <div class="p-hot-article-right-box">
+                        <h2>Perfree-Simple-Pro-致更好的你</h2>
+                        <span
+                          ><i class="fa fa-eye" aria-hidden="true"></i>
+                          5600</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="p-hot-article-box">
+                    <a
+                      href="1.htm"
+                      tppabs="http://www.jpress.yinpengfei.com/article/1"
+                      class="pjax"
+                    >
+                      <img
+                        src="../templates/perfree-simple-pro/static/images/2.png"
+                        tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/images/2.png"
+                        alt=""
+                        class="p-hot-article-img"
+                      />
+                      <div class="p-hot-article-right-box">
+                        <h2>PerfreeSimple-安安静静的写博客</h2>
+                        <span
+                          ><i class="fa fa-eye" aria-hidden="true"></i>
+                          1777</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="p-hot-article-box">
+                    <a
+                      href="4.htm"
+                      tppabs="http://www.jpress.yinpengfei.com/article/4"
+                      class="pjax"
+                    >
+                      <img
+                        src="../templates/perfree-simple-pro/static/images/3.png"
+                        tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/images/3.png"
+                        alt=""
+                        class="p-hot-article-img"
+                      />
+                      <div class="p-hot-article-right-box">
+                        <h2>推荐一个很棒的html网页背景图片网站</h2>
+                        <span
+                          ><i class="fa fa-eye" aria-hidden="true"></i>
+                          1296</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="p-hot-article-box">
+                    <a
+                      href="1359.htm"
+                      tppabs="http://www.jpress.yinpengfei.com/article/1359"
+                      class="pjax"
+                    >
+                      <img
+                        src="../templates/perfree-simple-pro/static/images/4.png"
+                        tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/images/4.png"
+                        alt=""
+                        class="p-hot-article-img"
+                      />
+                      <div class="p-hot-article-right-box">
+                        <h2>Python数学计算/解方程/求导</h2>
+                        <span
+                          ><i class="fa fa-eye" aria-hidden="true"></i>
+                          987</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="p-hot-article-box">
+                    <a
+                      href="7.htm"
+                      tppabs="http://www.jpress.yinpengfei.com/article/7"
+                      class="pjax"
+                    >
+                      <img
+                        src="../templates/perfree-simple-pro/static/images/5.png"
+                        tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/images/5.png"
+                        alt=""
+                        class="p-hot-article-img"
+                      />
+                      <div class="p-hot-article-right-box">
+                        <h2>谁又不曾孤独呢-孤独患者</h2>
+                        <span
+                          ><i class="fa fa-eye" aria-hidden="true"></i>
+                          873</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 热门end -->
+            <div class="p-right-card-box">
+              <h2 class="p-right-card-title">博客信息</h2>
+              <div class="p-right-card-body p-right-blog-msg-box">
+                <ul class="layui-clear">
+                  <li class="layui-clear">
+                    <span class="msg-box-left"
+                      ><i class="fa fa-book" aria-hidden="true"></i>
+                      文章数目</span
+                    >
                     <span class="msg-box-right">8</span>
-                </li>
-                <li class="layui-clear">
-                    <span class="msg-box-left"><i class="fa fa-comment-o" aria-hidden="true"></i> 标签数目</span>
+                  </li>
+                  <li class="layui-clear">
+                    <span class="msg-box-left"
+                      ><i class="fa fa-comment-o" aria-hidden="true"></i>
+                      标签数目</span
+                    >
                     <span class="msg-box-right">9</span>
-                </li>
-                <li class="layui-clear">
-                    <span class="msg-box-left"><i class="fa fa-bar-chart" aria-hidden="true"></i> 运行天数</span>
+                  </li>
+                  <li class="layui-clear">
+                    <span class="msg-box-left"
+                      ><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                      运行天数</span
+                    >
                     <span id="initDay" style="display: none">2018-05-28</span>
                     <span class="msg-box-right" id="dayDiff"></span>
-                </li>
-                <li class="layui-clear">
-                    <span class="msg-box-left"><i class="fa fa-refresh" aria-hidden="true"></i> 最后活动</span>
+                  </li>
+                  <li class="layui-clear">
+                    <span class="msg-box-left"
+                      ><i class="fa fa-refresh" aria-hidden="true"></i>
+                      最后活动</span
+                    >
                     <span id="articleLastTime" style="display: none">
-                                2019-08-13 11:38
+                      2019-08-13 11:38
                     </span>
                     <span class="msg-box-right" id="articleLastTimeDiff"></span>
-                </li>
-            </ul>
-        </div>
-    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-    <div class="p-right-card-box  perfree-hide ">
-        <h2 class="p-right-card-title">广告</h2>
-        <div class="p-right-card-body p-right-ad-box">
-        </div>
-    </div>
+            <div class="p-right-card-box perfree-hide">
+              <h2 class="p-right-card-title">广告</h2>
+              <div class="p-right-card-body p-right-ad-box"></div>
+            </div>
 
-    <!-- 标签start -->
-        <div class="p-right-card-box">
-            <h2 class="p-right-card-title">标签云</h2>
-            <div class="p-right-card-body">
+            <!-- 标签start -->
+            <div class="p-right-card-box">
+              <h2 class="p-right-card-title">标签云</h2>
+              <div class="p-right-card-body">
                 <div class="p-right-tag-cloud">
-                        <a href="tag/python.htm" tppabs="http://www.jpress.yinpengfei.com/article/tag/python" class="layui-btn layui-btn-radius perfree-tag pjax" title="共3篇文章">python</a>
-                        <a href="tag/数据分析.htm" tppabs="http://www.jpress.yinpengfei.com/article/tag/数据分析" class="layui-btn layui-btn-radius perfree-tag pjax" title="共1篇文章">数据分析</a>
-                        <a href="tag/语法.htm" tppabs="http://www.jpress.yinpengfei.com/article/tag/语法" class="layui-btn layui-btn-radius perfree-tag pjax" title="共1篇文章">语法</a>
-                        <a href="tag/杂七杂八.htm" tppabs="http://www.jpress.yinpengfei.com/article/tag/杂七杂八" class="layui-btn layui-btn-radius perfree-tag pjax" title="共1篇文章">杂七杂八</a>
-                        <a href="tag/Jpress.htm" tppabs="http://www.jpress.yinpengfei.com/article/tag/Jpress" class="layui-btn layui-btn-radius perfree-tag pjax" title="共1篇文章">Jpress</a>
-                        <a href="tag/我的项目.htm" tppabs="http://www.jpress.yinpengfei.com/article/tag/我的项目" class="layui-btn layui-btn-radius perfree-tag pjax" title="共1篇文章">我的项目</a>
-                        <a href="tag/乱七八糟.htm" tppabs="http://www.jpress.yinpengfei.com/article/tag/乱七八糟" class="layui-btn layui-btn-radius perfree-tag pjax" title="共1篇文章">乱七八糟</a>
-                        <a href="tag/主题模板.htm" tppabs="http://www.jpress.yinpengfei.com/article/tag/主题模板" class="layui-btn layui-btn-radius perfree-tag pjax" title="共1篇文章">主题模板</a>
-                        <a href="tag/服务器.htm" tppabs="http://www.jpress.yinpengfei.com/article/tag/服务器" class="layui-btn layui-btn-radius perfree-tag pjax" title="共1篇文章">服务器</a>
+                  <a
+                    href="tag/python.htm"
+                    tppabs="http://www.jpress.yinpengfei.com/article/tag/python"
+                    class="layui-btn layui-btn-radius perfree-tag pjax"
+                    title="共3篇文章"
+                    >python</a
+                  >
+                  <a
+                    href="tag/数据分析.htm"
+                    tppabs="http://www.jpress.yinpengfei.com/article/tag/数据分析"
+                    class="layui-btn layui-btn-radius perfree-tag pjax"
+                    title="共1篇文章"
+                    >数据分析</a
+                  >
+                  <a
+                    href="tag/语法.htm"
+                    tppabs="http://www.jpress.yinpengfei.com/article/tag/语法"
+                    class="layui-btn layui-btn-radius perfree-tag pjax"
+                    title="共1篇文章"
+                    >语法</a
+                  >
+                  <a
+                    href="tag/杂七杂八.htm"
+                    tppabs="http://www.jpress.yinpengfei.com/article/tag/杂七杂八"
+                    class="layui-btn layui-btn-radius perfree-tag pjax"
+                    title="共1篇文章"
+                    >杂七杂八</a
+                  >
+                  <a
+                    href="tag/Jpress.htm"
+                    tppabs="http://www.jpress.yinpengfei.com/article/tag/Jpress"
+                    class="layui-btn layui-btn-radius perfree-tag pjax"
+                    title="共1篇文章"
+                    >Jpress</a
+                  >
+                  <a
+                    href="tag/我的项目.htm"
+                    tppabs="http://www.jpress.yinpengfei.com/article/tag/我的项目"
+                    class="layui-btn layui-btn-radius perfree-tag pjax"
+                    title="共1篇文章"
+                    >我的项目</a
+                  >
+                  <a
+                    href="tag/乱七八糟.htm"
+                    tppabs="http://www.jpress.yinpengfei.com/article/tag/乱七八糟"
+                    class="layui-btn layui-btn-radius perfree-tag pjax"
+                    title="共1篇文章"
+                    >乱七八糟</a
+                  >
+                  <a
+                    href="tag/主题模板.htm"
+                    tppabs="http://www.jpress.yinpengfei.com/article/tag/主题模板"
+                    class="layui-btn layui-btn-radius perfree-tag pjax"
+                    title="共1篇文章"
+                    >主题模板</a
+                  >
+                  <a
+                    href="tag/服务器.htm"
+                    tppabs="http://www.jpress.yinpengfei.com/article/tag/服务器"
+                    class="layui-btn layui-btn-radius perfree-tag pjax"
+                    title="共1篇文章"
+                    >服务器</a
+                  >
                 </div>
+              </div>
             </div>
-        </div>
-    <!-- 标签end -->
-    <div id="toxBox">
-        <div class="p-right-card-box p-toc-box">
-            <h2 class="p-right-card-title">文章目录</h2>
-            <div class="p-right-card-body">
-                <div class="toc" id="toc">
+            <!-- 标签end -->
+            <div id="toxBox">
+              <div class="p-right-card-box p-toc-box">
+                <h2 class="p-right-card-title">文章目录</h2>
+                <div class="p-right-card-body">
+                  <div class="toc" id="toc"></div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-</div>
-                <div class="p-footer-box">
-    <div class="p-footer-box-left">© 2019 Perfree版权所有 豫ICP备18035337号</div>
-    <div class="p-footer-box-right"></div>
-</div>
+          </div>
+          <div class="p-footer-box">
+            <div class="p-footer-box-left">
+              © 2020 QZTu版权所有 赣ICP备15252014号
             </div>
+            <div class="p-footer-box-right"></div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="p-layout-right-btn">
-        <a class="go-top"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+      <a class="go-top"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
     </div>
-    <script src="../../v1.hitokoto.cn/-encode=js&select=-hitokoto.js" tppabs="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-    <script type="text/javascript" src="../templates/perfree-simple-pro/static/plugins/pjax/pjax.js" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/pjax/pjax.js"></script>
-    <script type="text/javascript" src="../templates/perfree-simple-pro/static/plugins/layer/layer.js" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/layer/layer.js"></script>
-    <script type="text/javascript" src="../templates/perfree-simple-pro/static/plugins/layui/layui.js" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/layui/layui.js"></script>
-    <script type="text/javascript" src="../templates/perfree-simple-pro/static/js/common.js" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/js/common.js"></script>
-    <script type="text/javascript" src="../templates/perfree-simple-pro/static/plugins/skplayer/skPlayer.js" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/skplayer/skPlayer.js"></script>
-    <script type="text/javascript" src="../templates/perfree-simple-pro/static/plugins/highlight/highlight.pack.js" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/highlight/highlight.pack.js"></script>
-    <script type="text/javascript" src="../templates/perfree-simple-pro/static/plugins/jquery.tocify/jquery-ui-1.9.1.custom.min.js" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/jquery.tocify/jquery-ui-1.9.1.custom.min.js"></script>
-    <script type="text/javascript" src="../templates/perfree-simple-pro/static/plugins/jquery.tocify/jquery.tocify.js" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/jquery.tocify/jquery.tocify.js"></script>
-    <script type="text/javascript" src="../templates/perfree-simple-pro/static/js/main.js" tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/js/main.js"></script>
-<script>
-    /**自定义js代码
-     */
-(function(window,document,undefined){
-		var hearts = [];
-		window.requestAnimationFrame = (function(){
-			return window.requestAnimationFrame ||
-			window.webkitRequestAnimationFrame ||
-			window.mozRequestAnimationFrame ||
-			window.oRequestAnimationFrame ||
-			window.msRequestAnimationFrame ||
-			function (callback){
-				setTimeout(callback,1000/60);
-			}
-		})();
-		init();
-		function init(){
-			css(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
-			attachEvent();
-			gameloop();
-		}
-		function gameloop(){
-			for(var i=0;i<hearts.length;i++){
-				if(hearts[i].alpha <=0){
-					document.body.removeChild(hearts[i].el);
-					hearts.splice(i,1);
-					continue;
-				}
-				hearts[i].y--;
-				hearts[i].scale += 0.004;
-				hearts[i].alpha -= 0.013;
-				hearts[i].el.style.cssText = "left:"+hearts[i].x+"px;top:"+hearts[i].y+"px;opacity:"+hearts[i].alpha+";transform:scale("+hearts[i].scale+","+hearts[i].scale+") rotate(45deg);background:"+hearts[i].color;
-			}
-			requestAnimationFrame(gameloop);
-		}
-		function attachEvent(){
-			var old = typeof window.onclick==="function" && window.onclick;
-			window.onclick = function(event){
-				old && old();
-				createHeart(event);
-			}
-		}
-		function createHeart(event){
-			var d = document.createElement("div");
-			d.className = "heart";
-			hearts.push({
-				el : d,
-				x : event.clientX - 5,
-				y : event.clientY - 5,
-				scale : 1,
-				alpha : 1,
-				color : randomColor()
-			});
-			document.body.appendChild(d);
-		}
-		function css(css){
-			var style = document.createElement("style");
-			style.type="text/css";
-			try{
-				style.appendChild(document.createTextNode(css));
-			}catch(ex){
-				style.styleSheet.cssText = css;
-			}
-			document.getElementsByTagName('head')[0].appendChild(style);
-		}
-		function randomColor(){
-			return "rgb("+(~~(Math.random()*255))+","+(~~(Math.random()*255))+","+(~~(Math.random()*255))+")";
-		}
-	})(window,document);    /***/
+    <script
+      src="../../v1.hitokoto.cn/-encode=js&select=-hitokoto.js"
+      tppabs="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="../templates/perfree-simple-pro/static/plugins/pjax/pjax.js"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/pjax/pjax.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../templates/perfree-simple-pro/static/plugins/layer/layer.js"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/layer/layer.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../templates/perfree-simple-pro/static/plugins/layui/layui.js"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/layui/layui.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../templates/perfree-simple-pro/static/js/common.js"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/js/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../templates/perfree-simple-pro/static/plugins/skplayer/skPlayer.js"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/skplayer/skPlayer.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../templates/perfree-simple-pro/static/plugins/highlight/highlight.pack.js"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/highlight/highlight.pack.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../templates/perfree-simple-pro/static/plugins/jquery.tocify/jquery-ui-1.9.1.custom.min.js"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/jquery.tocify/jquery-ui-1.9.1.custom.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../templates/perfree-simple-pro/static/plugins/jquery.tocify/jquery.tocify.js"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/plugins/jquery.tocify/jquery.tocify.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../templates/perfree-simple-pro/static/js/main.js"
+      tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/js/main.js"
+    ></script>
+    <script>
 
-    /**自定义盒子宽度
-    */
-        $(".p-box").css("width","68%");
-    /***/
-</script>
+      //构建Promise异步对象，通过多种方式实现图片预加载
+      function loadImage(src){
+            var p = new Promise(function(resolve,reject){
+                var img = new Image();
+                img.onload=function(){
+                    resolve(img);
+                }
+                img.onerror=function(){
+                    reject(src);
+                }
+                img.src=src;
+            });
+            return p;
+        }
 
-</body></html>
+        // 第一种方式,通过Promise.all()实现
+        var arr = [];
+        //图片命名从3-到79-，所以循环从3开始到80结束
+        for(var i=1; i<53; i++){
+            var p = loadImage("../../blogs/img/"+i+".jpg");
+            arr.push(p);
+        }
+        // console.log(arr)
+        Promise.all(arr).then(function(list){
+            list.forEach(item=>{
+                // console.log(item.width,item.src);
+            })
+        })
+    </script>
+    <script>
+      /**自定义js代码
+       */
+      (function (window, document, undefined) {
+        var hearts = [];
+        window.requestAnimationFrame = (function () {
+          return (
+            window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function (callback) {
+              setTimeout(callback, 1000 / 60);
+            }
+          );
+        })();
+        init();
+        function init() {
+          css(
+            ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}"
+          );
+          attachEvent();
+          gameloop();
+        }
+        function gameloop() {
+          for (var i = 0; i < hearts.length; i++) {
+            if (hearts[i].alpha <= 0) {
+              document.body.removeChild(hearts[i].el);
+              hearts.splice(i, 1);
+              continue;
+            }
+            hearts[i].y--;
+            hearts[i].scale += 0.004;
+            hearts[i].alpha -= 0.013;
+            hearts[i].el.style.cssText =
+              "left:" +
+              hearts[i].x +
+              "px;top:" +
+              hearts[i].y +
+              "px;opacity:" +
+              hearts[i].alpha +
+              ";transform:scale(" +
+              hearts[i].scale +
+              "," +
+              hearts[i].scale +
+              ") rotate(45deg);background:" +
+              hearts[i].color;
+          }
+          requestAnimationFrame(gameloop);
+        }
+        function attachEvent() {
+          var old = typeof window.onclick === "function" && window.onclick;
+          window.onclick = function (event) {
+            old && old();
+            createHeart(event);
+          };
+        }
+        function createHeart(event) {
+          var d = document.createElement("div");
+          d.className = "heart";
+          hearts.push({
+            el: d,
+            x: event.clientX - 5,
+            y: event.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: randomColor(),
+          });
+          document.body.appendChild(d);
+        }
+        function css(css) {
+          var style = document.createElement("style");
+          style.type = "text/css";
+          try {
+            style.appendChild(document.createTextNode(css));
+          } catch (ex) {
+            style.styleSheet.cssText = css;
+          }
+          document.getElementsByTagName("head")[0].appendChild(style);
+        }
+        function randomColor() {
+          return (
+            "rgb(" +
+            ~~(Math.random() * 255) +
+            "," +
+            ~~(Math.random() * 255) +
+            "," +
+            ~~(Math.random() * 255) +
+            ")"
+          );
+        }
+        //bizhi
+   var i = 1;
+        setInterval(() => {
+          i = Math.round(Math.random() * 51 + 1);
+
+            $("body").css("background", `url(../../blogs/img/${i}.jpg) no-repeat`);
+
+        }, 1000 * 10);
+      })(window, document); /***/
+
+      /**自定义盒子宽度
+       */
+      $(".p-box").css("width", "68%");
+      /***/
+
+         /*
+
+      $(".home").css("display", "none");
+      $(".cat").css("display", "table-cell");
+      $(".photo").css("display", "none");
+      $(".time").css("display", "none");
+      $(".friend").css("display", "none");
+
+      var $win  =$(window);
+if($win.width() > 1024) {
+    // 加载baicss1
+} else {
+    // 加载css2
+}
+ 小平 block
+ 大屏 table-cell
+      */
+
+      var $win  =$(window);
+      function home(params) {
+
+        $(".home").show();
+        // $(".home").css("display", "block");
+        $(".cat").hide()
+        $(".photo").hide()
+        $(".time").hide()
+        $(".friend").hide()
+        $(".play").hide()
+        $(".drawing").hide()
+      }
+      function cat(params) {
+        if($win.width() >900) {
+        $(".cat").css("display", "table-cell");
+        } else {
+        $(".cat").css("display", "block");
+        }
+        $(".home").hide()
+        $(".photo").hide()
+        $(".time").hide()
+        $(".friend").hide()
+        $(".drawing").hide()
+        $(".play").hide()
+      }
+      function photo(params) {
+        if($win.width() >900) {
+        $(".photo").css("display", "table-cell");
+        } else {
+        $(".photo").css("display", "block");
+        }
+        $(".home").hide()
+        $(".cat").hide()
+        $(".time").hide()
+        $(".friend").hide()
+        $(".drawing").hide()
+        $(".play").hide()
+      }
+      function time(params) {
+        if($win.width() >900) {
+        $(".time").css("display", "table-cell");
+        } else {
+        $(".time").css("display", "block");
+        }
+        $(".home").hide()
+        // $(".time").css("display", "block");
+        $(".cat").hide()
+        $(".photo").hide()
+        $(".friend").hide()
+        $(".drawing").hide()
+        $(".play").hide()
+      }
+      function friend(params) {
+        if($win.width() >900) {
+        $(".friend").css("display", "table-cell");
+        } else {
+        $(".friend").css("display", "block");
+        }
+        $(".home").hide()
+        // $(".friend").css("display", "block");
+        $(".cat").hide()
+        $(".photo").hide()
+        $(".time").hide()
+        $(".drawing").hide()
+        $(".play").hide()
+      }
+      function play(params) {
+        if($win.width() >900) {
+        $(".play").css("display", "table-cell");
+        } else {
+        $(".play").css("display", "block");
+        }
+        $(".home").hide()
+        // $(".play").css("display", "block");
+        $(".cat").hide()
+        $(".photo").hide()
+        $(".time").hide()
+        $(".friend").hide()
+        $(".drawing").hide()
+      }
+      function drawing(params) {
+        if($win.width() >900) {
+        $(".drawing").css("display", "table-cell");
+        } else {
+        $(".drawing").css("display", "block");
+        }
+        $(".home").hide()
+        // $(".drawing").css("display", "block");
+        $(".play").hide()
+        $(".cat").hide()
+        $(".photo").hide()
+        $(".time").hide()
+        $(".friend").hide()
+      }
+    </script>
+  </body>
+</html>
+
+
+
