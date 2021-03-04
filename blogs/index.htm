@@ -46,6 +46,9 @@
       type="text/javascript"
       src="templates/perfree-simple-pro/static/plugins/jquery/jquery-1.8.3.min.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
     <style>
       body {
         background: url("./img/2.jpg") no-repeat;
@@ -62,7 +65,11 @@
       .home{
         /* display: table-cell; */
       }
-
+      video{
+        background-color: aliceblue;
+        width: 100% !important;
+        margin: 0 !important;
+      }
     </style>
   </head>
   <body>
@@ -143,6 +150,8 @@
                               : Math.min(s, t.length - c.skillP)
                           )
                         ),
+
+
                         setTimeout(i, d);
                     }
                     var l = "♥",
@@ -185,6 +194,7 @@
                         step: g,
                       };
                     i();
+
                   };
                   chakhsu(document.getElementById("chakhsu"));
                 </script>
@@ -346,9 +356,11 @@
           >
             <span class="p-left-logo-box-text-name">小小提米苏</span>
           </a>
-          <div class="p-header-box-right-box">
-            <div class="p-header-box-music-box">
-              <div id="skPlayer"></div>
+          <div class="p-header-box-right-box" >
+            <div class="p-header-box-music-box" style="width: 300px;">
+              <div id="skPlayer">
+                <!-- <iframe style="height: 100%;" src="https://sharefs.yun.kugou.com/202102231921/34732a21660f949aef2759e7dca1c10c/KGTX/CLTX001/0f5086e1567a52de6672f3b91e2f31ed.mp3" frameborder="0" ></iframe> -->
+              </div>
             </div>
             <div class="p-header-box-login-box">
               <a
@@ -1397,6 +1409,7 @@
                 // console.log(item.width,item.src);
             })
         })
+
     </script>
     <script>
       /**自定义js代码

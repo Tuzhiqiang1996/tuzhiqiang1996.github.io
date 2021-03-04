@@ -88,7 +88,8 @@ class skPlayer {
             this.bind();
         }else if(this.type === 'cloud'){
             Util.ajax({
-                url: baseUrl + 'perfree/music/getMusicList',
+                //url: baseUrl + 'perfree/music/getMusicList',
+url:"http://m10.music.126.net/20210223191733/cfcd8dc544057af1147800df813f99e0/ymusic/5458/515c/0108/c2933cf376f6a7c947db6b039c8a3516.mp3",
                 // url: 'http://www.jpress.yinpengfei.com/perfree/music/getMusicList',
                 // url:"../templates/perfree-simple-pro/static/plugins/skplayer/getMusicList",
                 beforeSend: () => {
@@ -98,9 +99,11 @@ class skPlayer {
                     this.root.innerHTML = this.template();
                     this.init();
                     this.bind();
+                    console.log(data)
                 },
                 fail: (status) => {
                     lay_notice.error('歌单拉取失败！ 错误码：' + status);
+                    console.error(status)
                 }
             });
         }
