@@ -357,9 +357,14 @@
             <span class="p-left-logo-box-text-name">小小提米苏</span>
           </a>
           <div class="p-header-box-right-box" >
-            <div class="p-header-box-music-box" style="width: 300px;">
+            <div class="p-header-box-music-box" style="width: 300px;text-align:center;">
               <div id="skPlayer">
+                音乐play
                 <!-- <iframe style="height: 100%;" src="https://sharefs.yun.kugou.com/202102231921/34732a21660f949aef2759e7dca1c10c/KGTX/CLTX001/0f5086e1567a52de6672f3b91e2f31ed.mp3" frameborder="0" ></iframe> -->
+                <iframe src="../html5-classical-player/index.html" width="540" height="500"  id="playmis" style="    top: 50%;
+                left: 50%;
+                position: fixed;margin: -270px;
+                 " frameborder="0" scrolling="no"></iframe>
               </div>
             </div>
             <div class="p-header-box-login-box">
@@ -1406,7 +1411,10 @@
       tppabs="http://www.jpress.yinpengfei.com/templates/perfree-simple-pro/static/js/main.js"
     ></script>
     <script>
+$("#skPlayer").click(function(){
+  $('#playmis').toggle();
 
+})
       //构建Promise异步对象，通过多种方式实现图片预加载
       function loadImage(src){
             var p = new Promise(function(resolve,reject){
@@ -1577,7 +1585,7 @@ if($win.width() > 1024) {
         $(".drawing").hide()
       }
       function cat(params) {
-        if($win.width() >900) {
+        if($win.width() > 900 ) {
         $(".cat").css("display", "table-cell");
         } else {
         $(".cat").css("display", "block");
@@ -1658,6 +1666,7 @@ if($win.width() > 1024) {
         $(".time").hide()
         $(".friend").hide()
       }
+
     </script>
   </body>
 </html>

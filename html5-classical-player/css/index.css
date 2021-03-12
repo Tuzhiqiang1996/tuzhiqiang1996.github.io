@@ -1,0 +1,209 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+}
+/*动画基础*/
+
+@keyframes myCDRotate
+{
+    from {transform:rotate(0);}
+    to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes myCDRotate /* Firefox */
+{
+    from {transform:rotate(0);}
+    to {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes myCDRotate /* Safari 和 Chrome */
+{
+    from {transform:rotate(0);}
+    to {transform:rotate(360deg);}
+}
+
+@-o-keyframes myCDRotate /* Opera */
+{
+    from {transform:rotate(0);}
+    to {transform:rotate(360deg);}
+}
+
+@font-face
+{
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont
+{
+    font-family:"iconfont" !important;
+    font-size:20px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.iconfontPlayMode
+{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+#cdPlayer
+{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    margin-top: -250px;
+    margin-left: -250px;
+}
+
+#CD
+{
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/cdbk.png") no-repeat;
+    background-size: cover;
+    z-index: 2000;
+    position: absolute;
+}
+#cdDisk
+{
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    background: url("../imgs/cddisk.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2000;
+}
+#cdCover
+{
+    width: 36%;
+    height: 36%;
+    /*border-radius: 100px;*/
+    background: url("../imgs/logo.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -18%;
+    margin-left: -18%;
+    z-index: 3;
+    transition:all 0.5s;
+}
+.cdStart
+{
+    animation:myCDRotate 5s infinite linear;
+}
+.cdPause
+{
+    /*animation:myCDRotate 1s 2 alternate;*/
+    /*animation:myCDRotate 2s infinite linear;*/
+    animation-play-state:paused;
+}
+#cdControllerArm
+{
+    width: 20%;
+    height: 50%;
+    /*border-radius: 100px;*/
+    background: url("../imgs/controllerArm.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 2001;
+    top: 80px;
+    left: -60px;
+    -moz-transform-origin: top right;
+    -webkit-transform-origin:top right;
+    -o-transform-origin:top right;
+    transition:all 0.8s;
+    transform:rotate(-130deg);
+}
+
+#controllerButton
+{
+    width: 125px;
+    height: 220px;
+    position: absolute;
+    top: 312px;
+    right: -60px;
+    margin-top: -250px;
+    z-index: 1;
+}
+#controllerButton .button
+{
+    width: 100px;
+    height: 37px;
+    text-align: right;
+    line-height: 37px;
+    color: #b1b9c6;
+    font-size: 20px;
+    font-family: '华文新魏';
+    background: url("../imgs/controllBtn.png") no-repeat;
+    background-size: contain;
+    margin:10px 0;
+    cursor: pointer;
+}
+#controllerButton .button:hover
+{
+    color: #ffffff;
+}
+
+#playMode
+{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    right: 2px;
+    bottom: 20px;
+    z-index: 2001;
+}
+#playMode .mode
+{
+    width: 26px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    color: #b1b9c6;
+    font-size: 16px;
+    margin: 0 2px;
+    padding-left: 4px;
+    cursor: pointer;
+}
+#playMode .mode:hover
+{
+    color: #e74d3c;
+}
+
+#myConsole
+{
+    width: 500px;
+    height: 30px;
+    font-family: '华文新魏';
+    font-size: 20px;
+    color:  #e74d3c;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    z-index: 2001;
+}
