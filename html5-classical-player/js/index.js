@@ -286,40 +286,40 @@ Number.prototype.toPercent = function(n)
 var songsList =
 [
     {
-        "title" : "行歌",
-        "artist" : "陈鸿宇",
+        "title" : "post livess",
+        "artist" : "slushii",
         "coverURL" : "",
-        "musicURL" : "./audio/6457.mp3"
+        "musicURL" : "./audio/1.mp3"
     },
     {
-        "title" : "有梦好甜蜜(口琴变奏)",
-        "artist" : "渠成",
+        "title" : "Relax",
+        "artist" : "Junona Boys",
         "coverURL" : "",
-        "musicURL" : "./audio/6457.mp3"
+        "musicURL" : "./audio/2.mp3"
     },
     {
-        "title" : "心愿",
-        "artist" : "四个女生",
+        "title" : "海底",
+        "artist" : "一支榴莲",
         "coverURL" : "",
-        "musicURL" : "./audio/6457.mp3"
+        "musicURL" : "./audio/3.mp3"
     },
     {
-        "title" : "广东姑娘",
-        "artist" : "五条人",
+        "title" : "晚风",
+        "artist" : "copy",
         "coverURL" : "",
-        "musicURL" : "./audio/6457.mp3"
+        "musicURL" : "./audio/4.mp3"
     },
     {
-        "title" : "扬州",
-        "artist" : "李晋",
+        "title" : "Колыбельная",
+        "artist" : "Rauf & faik",
         "coverURL" : "",
-        "musicURL" : "./audio/6457.mp3"
+        "musicURL" : "./audio/5.mp3"
     },
     {
-        "title" : "小五",
-        "artist" : "崔跃文",
+        "title" : "LOVE IS GONE",
+        "artist" : "SLANDER",
         "coverURL" : "",
-        "musicURL" : "./audio/6457.mp3"
+        "musicURL" : "./audio/6.mp3"
     },
     {
         "title" : "多兰娜",
