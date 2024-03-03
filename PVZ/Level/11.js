@@ -5,10 +5,10 @@ oS.Init({
 		ZName:[oZombie,oNewspaperZombie],
 		PicArr:function(){
 			var Pro=oSunShroom.prototype,PicArr=Pro.PicArr;
-			return ['images/interface/background2.jpg','images/interface/Tombstones.png','images/interface/Tombstone_mounds.png',
+			return ['./images/interface/background2.jpg','./images/interface/Tombstones.png','./images/interface/Tombstone_mounds.png',
 				PicArr[Pro.CardGif],PicArr[Pro.NormalGif]]
 		}(),
-		backgroundImage:'images/interface/background2.jpg',
+		backgroundImage:'./images/interface/background2.jpg',
 		CanSelectCard:1,
 		DKind:0,
 		SunNum:50,
@@ -28,7 +28,7 @@ oS.Init({
 		FlagToSumNum:{a1:[3,5,9],a2:[1,2,3,15]}, //代表第1-3波强度是1，4-5是2，6-9是3，其余是10
 		FlagToMonitor:{10:[ShowFinalWave,0]},
 		FlagToEnd:function(){
-			NewImg('imgSF','images/Card/Plants/SunShroom.png','left:667px;top:220px',EDAll,{onclick:function(){SelectModal(12)}});
-			NewImg('PointerUD','images/interface/PointerDown.gif','top:185px;left:676px',EDAll);
+			NewImg('imgSF','./images/Card/Plants/SunShroom.png','left:667px;top:220px',EDAll,{onclick:function(){SelectModal(12)}});
+			NewImg('PointerUD','./images/interface/PointerDown.gif','top:185px;left:676px',EDAll);
 		}
 });
